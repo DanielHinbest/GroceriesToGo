@@ -2,7 +2,7 @@ package ca.groceriestogo.model;
 
 import javax.persistence.*;
 import java.util.Set;
-
+// Ryan was Here
 @Entity
 @Table(name = "role")
 public class Role {
