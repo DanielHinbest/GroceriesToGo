@@ -9,15 +9,31 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
+/**
+ * A class to validate and authenticate a user into the website
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-02-12)
+ * @since 1.0
+ */
 @Component
 public class UserValidator implements Validator {
+	/**
+	 * Create a new instance of the user service
+	 */
 	@Autowired
 	private UserService userService;
 	
-	@Override public boolean supports(Class<?> aClass) {
+	/**
+	 * Function to verify the user classes are equal
+	 */
+	@Override 
+	public boolean supports(Class<?> aClass) {
 		return User.class.equals(aClass);
 	}
 	
+	/**
+	 * Validate a user when they log in
+	 */
 	@Override
 	public void validate(Object o, Errors errors) {
 		User user = (User) o;

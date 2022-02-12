@@ -15,10 +15,22 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * The implementation class for the user details service interface from the Spring framework
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-02-12)
+ * @since 1.0
+ */
 public class UserDetailsServiceImpl implements UserDetailsService {
+	/**
+	 * A new instance of the user repository
+	 */
 	@Autowired
 	private UserRepository userRepository;
 	
+	/**
+	 * Load the user that is provided by the username
+	 */
 	@Override
 	@Transactional(readOnly = true)
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {

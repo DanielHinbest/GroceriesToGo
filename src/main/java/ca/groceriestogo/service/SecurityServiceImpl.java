@@ -10,16 +10,35 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
+/**
+ * The implementation class for the Security Service interface. This class operates
+ * the security services and defines the functions
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-02-12)
+ * @since 1.0
+ */
 @Service
 public class SecurityServiceImpl implements SecurityService {
+	/**
+	 * The class to manage the user authentication
+	 */
 	@Autowired
 	private AuthenticationManager authenticationManager;
 	
+	/**
+	 * An instance of the User Details
+	 */
 	@Autowired
 	private UserDetailsService userDetailsService;
 	
+	/**
+	 * The logger for the operations
+	 */
 	private static final Logger logger = LoggerFactory.getLogger(SecurityServiceImpl.class);
 	
+	/**
+	 * Search for the logged in username
+	 */
 	@Override
 	public String findLoggedInUsername() {
 		Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
@@ -29,6 +48,9 @@ public class SecurityServiceImpl implements SecurityService {
 		return null;
 	}
 	
+	/**
+	 * Login the user with the username and password provided
+	 */
 	@Override
 	public void autologin(String username, String password) {
 		UserDetails userDetails = userDetailsService.loadUserByUsername(username);

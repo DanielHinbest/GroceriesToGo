@@ -8,7 +8,7 @@
         </encoder>
     </appender>
 
-    <logger name="xxx.lastnamefirstinitial.coursecode">
+    <logger name="ca.groceriestogo">
         <level value="debug"/>
     </logger>
 
