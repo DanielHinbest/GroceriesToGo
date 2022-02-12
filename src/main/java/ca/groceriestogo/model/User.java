@@ -22,6 +22,10 @@ public class User {
      */
     private String username;
     /**
+     * The user's email address
+     */
+    private String email;
+    /**
      * The password for the user which is used to login to the website
      */
     private String password;
@@ -29,6 +33,38 @@ public class User {
      * The password confirmation that is set when the user registers with the website.
      */
     private String passwordConfirm;
+    /**
+     * The first name of the user
+     */
+    private String firstName;
+    /**
+     * The last name of the user
+     */
+    private String lastName;
+    /**
+     * The user's birthday
+     */
+    private String dateOfBirth;
+    /**
+     * The address for the user
+     */
+    private String addressLine1;
+    /**
+     * The additional address details for the user
+     */
+    private String addressLine2;
+    /**
+     * The city of the user
+     */
+    private String city;
+    /**
+     * The province of the user
+     */
+    private String province;
+    /**
+     * The user's postal code
+     */
+    private String postalCode;
     /**
      * A set of roles that a user might be assigned with the website
      */
@@ -69,6 +105,22 @@ public class User {
     }
 
     /**
+     * Return the user's email address
+     * @return the email address
+     */
+    public String getEmail() {
+		return email;
+	}
+
+    /**
+     * Set the user's email address
+     * @param email The email address
+     */
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	/**
      * Return the password from the database
      * @return The hashed password
      */
@@ -101,8 +153,136 @@ public class User {
     public void setPasswordConfirm(String passwordConfirm) {
         this.passwordConfirm = passwordConfirm;
     }
+    
+    /**
+     * Return the user's first name
+     * @return the first name
+     */
+    public String getFirstName() {
+		return firstName;
+	}
 
     /**
+     * Set the user's last name
+     * @param firstName the user's first name
+     */
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	/**
+	 * Return the user's last name
+	 * @return the user's last name
+	 */
+	public String getLastName() {
+		return lastName;
+	}
+
+	/**
+	 * Set the user's last name
+	 * @param lastName the user's last name
+	 */
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	/**
+	 * Return the date of birth
+	 * @return the user's date of birth
+	 */
+	public String getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+	/**
+	 * Set the user's date of birth
+	 * @param dateOfBirth the date of birth
+	 */
+	public void setDateOfBirth(String dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+	/**
+	 * Return the user's address
+	 * @return the user's address
+	 */
+	public String getAddressLine1() {
+		return addressLine1;
+	}
+
+	/**
+	 * Set the user's address 
+	 * @param addressLine1 the address
+	 */
+	public void setAddressLine1(String addressLine1) {
+		this.addressLine1 = addressLine1;
+	}
+
+	/**
+	 * Return the additional address details
+	 * @return the additional address details
+	 */
+	public String getAddressLine2() {
+		return addressLine2;
+	}
+
+	/**
+	 * Set the additional address details
+	 * @param addressLine2 additional address details
+	 */
+	public void setAddressLine2(String addressLine2) {
+		this.addressLine2 = addressLine2;
+	}
+	
+	/**
+	 * Return the user's city
+	 * @return the user's city
+	 */
+	public String getCity() {
+		return city;
+	}
+
+	/**
+	 * Set the user's city
+	 * @param city The user's city
+	 */
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	/**
+	 * Return the user's province
+	 * @return The user's province
+	 */
+	public String getProvince() {
+		return province;
+	}
+	
+	/**
+	 * Set the user's province
+	 * @param province the user's province
+	 */
+	public void setProvince(String province) {
+		this.province = province;
+	}
+
+	/**
+	 * Return the user's postal code
+	 * @return the postal code
+	 */
+	public String getPostalCode() {
+		return postalCode;
+	}
+
+	/**
+	 * Set the user's postal code
+	 * @param postalCode the postal code
+	 */
+	public void setPostalCode(String postalCode) {
+		this.postalCode = postalCode;
+	}
+
+	/**
      * Using a join table return a set of roles for the user
      * @return the user roles
      */

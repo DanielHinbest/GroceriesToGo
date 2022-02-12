@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private RoleRepository roleRepository;
     /**
-     * An instance of the BCrypt incoder to hash passwords
+     * An instance of the BCrypt encoder to hash passwords
      */
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
@@ -49,5 +49,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+    
+    /**
+     * Search for a new user to verify it exists
+     */
+    @Override
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
 }

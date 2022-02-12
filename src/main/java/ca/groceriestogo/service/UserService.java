@@ -22,4 +22,12 @@ public interface UserService {
 	 * @return The user class found in the database
 	 */
 	User findByUsername(String username);
+	
+
+	/**
+	 * Search for the user in the database to see if it exists
+	 * @param email the email being used for the search
+	 * @return The user class found in the database
+	 */
+	User findByEmail(String email);
 }
