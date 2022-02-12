@@ -1,0 +1,5 @@
+ca.groceriestogo.model
+ca.groceriestogo.repository
+ca.groceriestogo.service
+ca.groceriestogo.validator
+ca.groceriestogo.web
