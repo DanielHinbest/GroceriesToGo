@@ -19,6 +19,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Option4</a> 
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Option5</a> 
+      </li>
     </ul>
   </div>
 </nav>
