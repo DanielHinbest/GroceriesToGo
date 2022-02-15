@@ -14,7 +14,10 @@
         <a class="nav-link" href="#">Option2</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Option3</a>
+        <a class="nav-link" href="#">Option3</a> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Option4</a> 
       </li>
     </ul>
   </div>
