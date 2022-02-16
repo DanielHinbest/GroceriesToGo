@@ -100,4 +100,9 @@ public class UserController {
 	public String welcome(Model model) {
 		return "index";
 	}
+
+	@RequestMapping(value = {"/test"}, method = RequestMethod.GET)
+	public String test(Model model) {
+		return "test";
+	}
 }

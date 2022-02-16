@@ -16,6 +16,9 @@
       <li class="nav-item">
         <a class="nav-link" href="#">Option3</a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">Option5</a> 
+      </li>
     </ul>
   </div>
 </nav>
