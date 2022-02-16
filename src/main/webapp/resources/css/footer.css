@@ -48,6 +48,7 @@ ul{
 }
 .column ul li:not(:last-child){
 	margin-bottom: 10px;
+	
 }
 .column ul li a{
 	font-size: 16px;

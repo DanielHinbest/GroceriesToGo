@@ -32,6 +32,7 @@
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </div>
+    
 </div>
 </footer>
 </body>
