@@ -102,7 +102,7 @@ public class UserController {
 	}
     /**
      * Test file route
-     * /
+     **/
 	@RequestMapping(value = {"/test"}, method = RequestMethod.GET)
 	public String test(Model model) {
 		return "test";
