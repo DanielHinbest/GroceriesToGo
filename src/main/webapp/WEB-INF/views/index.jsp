@@ -1,8 +1,5 @@
 <% String title = "Welcome"; %>
 <%@ include file="layouts/header.jsp"%>
-<sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
-         url = "jdbc:mysql://localhost:3306/groceriestogo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehaviour=convertToNull"
-         user = "root"  password = "password"/>
 <c:set var = "username" value = "${pageContext.request.userPrincipal.name}"/>
 <sql:query dataSource = "${snapshot}" var = "result">
          SELECT * from User WHERE username = ?
