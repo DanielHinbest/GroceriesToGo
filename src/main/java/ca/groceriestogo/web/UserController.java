@@ -59,7 +59,7 @@ public class UserController {
 	@RequestMapping(value = "/registration", method = RequestMethod.POST)
 	public String registration(@ModelAttribute("userForm") User userForm, BindingResult bindingResult, Model model) {
 		userValidator.validate(userForm, bindingResult);
-		
+		System.out.println(userForm.getEmail());
 		if (bindingResult.hasErrors()) {
 			return "registration";
 		}
@@ -102,6 +102,8 @@ public class UserController {
 	}
     /**
      * Test file route
+     * @param model The model being passed
+     * @return the test view
      **/
 	@RequestMapping(value = {"/test"}, method = RequestMethod.GET)
 	public String test(Model model) {

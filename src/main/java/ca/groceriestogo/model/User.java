@@ -26,6 +26,11 @@ public class User {
      */
     private String email;
     /**
+     * The user's phone number
+     * 
+     */
+    private String phone;
+    /**
      * The password for the user which is used to login to the website
      */
     private String password;
@@ -118,6 +123,22 @@ public class User {
      */
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	/**
+	 * Return the user's phone number
+	 * @return The user's phone number
+	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	/**
+	 * Set the user's phone number 
+	 * @param phoneNumber The user's phone number
+	 */
+	public void setPhone(String phoneNumber) {
+		this.phone = phoneNumber;
 	}
 
 	/**
@@ -287,7 +308,7 @@ public class User {
      * @return the user roles
      */
     @ManyToMany
-    @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
+    @JoinTable(name = "User_Role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     public Set<Role> getRoles() {
         return roles;
     }

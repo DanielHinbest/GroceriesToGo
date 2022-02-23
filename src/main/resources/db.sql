@@ -1,49 +1,95 @@
-CREATE DATABASE IF NOT EXISTS groceriestogo;
-USE groceriestogo;
+CREATE DATABASE IF NOT EXISTS GroceriesToGo;
+USE GroceriesToGo;
 
---
--- Table structure for table `role`
---
-DROP TABLE IF EXISTS role;
-CREATE TABLE role (
-  id INTEGER NOT NULL AUTO_INCREMENT,
-  name VARCHAR(45) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `role`
---
-LOCK TABLES role WRITE;
-INSERT INTO role VALUES (1, 'ROLE_USER');
-UNLOCK TABLES;
-
---
--- Table structure for table `user`
---
-DROP TABLE IF EXISTS user;
-CREATE TABLE user (
+DROP TABLE IF EXISTS User;
+CREATE TABLE User (
 	id INTEGER NOT NULL AUTO_INCREMENT,
     username VARCHAR(32) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
+    phone VARCHAR(12) NOT NULL,
     password VARCHAR(255) NOT NULL,
     firstName VARCHAR(20) NOT NULL,
     lastName VARCHAR(25) NOT NULL,
-    dateOfBirth DATETIME,-- NOT NULL,
+    dateOfBirth DATE,-- NOT NULL,
     addressLine1 VARCHAR(255) NOT NULL,
     addressLine2 VARCHAR(255),
     city VARCHAR(50) NOT NULL,
     province VARCHAR(50) NOT NULL,
     postalCode VARCHAR(7) NOT NULL,
-    reset_password_token VARCHAR(30),
     PRIMARY KEY (id)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) AUTO_INCREMENT=1;
 
---
--- Table structure for table `user_role`
---
+DROP TABLE IF EXISTS Store;
+CREATE TABLE Store (
+	store_id INTEGER NOT NULL AUTO_INCREMENT,
+    store_name VARCHAR(50) NOT NULL,
+    phone_number VARCHAR(12) NOT NULL,
+    address_line_1 VARCHAR(255) NOT NULL,
+    address_line_2 VARCHAR(255) NOT NULL,
+    city VARCHAR(50) NOT NULL,
+    province VARCHAR(50) NOT NULL,
+    postal_code VARCHAR(7) NOT NULL,
+    PRIMARY KEY (store_id)
+) AUTO_INCREMENT=1;
 
-DROP TABLE IF EXISTS user_role;
+DROP TABLE IF EXISTS Department;
+CREATE TABLE Department (
+	department_id INTEGER NOT NULL AUTO_INCREMENT,
+    department_name VARCHAR(25) NOT NULL,
+    store_id INTEGER,
+    PRIMARY KEY (department_id),
+    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+DROP TABLE IF EXISTS Item;
+CREATE TABLE Item (
+	item_id INTEGER NOT NULL AUTO_INCREMENT,
+    item_name VARCHAR(25) NOT NULL,
+    item_brand VARCHAR(15) NOT NULL,
+    item_stock INTEGER NOT NULL,
+    item_cost DECIMAL(5, 2) NOT NULL,
+    department_id INTEGER NOT NULL,
+    store_id INTEGER,
+    PRIMARY KEY (item_id),
+    FOREIGN KEY (department_id) REFERENCES Department(department_id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+) AUTO_INCREMENT=1;
+
+DROP TABLE IF EXISTS CartItem;
+CREATE TABLE CartItem (
+	cart_item_id INTEGER NOT NULL AUTO_INCREMENT,
+    quantity INTEGER NOT NULL,
+    cost DECIMAL(5, 2) NOT NULL,
+    user_id INTEGER,
+    store_id INTEGER,
+    PRIMARY KEY (cart_item_id),
+    FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+) AUTO_INCREMENT=1;
+    
+DROP TABLE IF EXISTS `Order`;
+CREATE TABLE `Order` (
+	order_id INTEGER NOT NULL AUTO_INCREMENT,
+    order_cost DECIMAL (6, 2) NOT NULL,
+    number_of_items INTEGER NOT NULL,
+    order_date DATE NOT NULL,
+    user_id INTEGER,
+    store_id INTEGER,
+    PRIMARY KEY (order_id),
+    FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+) AUTO_INCREMENT=1;
+
+DROP TABLE IF EXISTS Role;
+CREATE TABLE role (
+  id INTEGER NOT NULL AUTO_INCREMENT,
+  name VARCHAR(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO Role VALUES (1, 'ROLE_USER');
+
+DROP TABLE IF EXISTS User_Role;
 CREATE TABLE user_role (
   user_id INTEGER NOT NULL,
   role_id INTEGER NOT NULL,
@@ -51,4 +97,4 @@ CREATE TABLE user_role (
   KEY fk_user_role_roleid_idx (role_id),
   CONSTRAINT fk_user_role_roleid FOREIGN KEY (role_id) REFERENCES role (id) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT fk_user_role_userid FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);

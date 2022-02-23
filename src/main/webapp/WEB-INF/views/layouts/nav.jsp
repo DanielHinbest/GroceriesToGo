@@ -25,6 +25,10 @@
        <li class="nav-item">
         <a class="nav-link" href="#">Option5</a> 
       </li>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" onclick="document.forms['logoutForm'].submit()" href="#">Logout</a> 
+      </li>
     </ul>
   </div>
 </nav>
