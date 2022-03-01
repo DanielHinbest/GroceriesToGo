@@ -25,7 +25,7 @@ CREATE TABLE Store (
     store_name VARCHAR(50) NOT NULL,
     phone_number VARCHAR(12) NOT NULL,
     address_line_1 VARCHAR(255) NOT NULL,
-    address_line_2 VARCHAR(255) NOT NULL,
+    address_line_2 VARCHAR(255),
     city VARCHAR(50) NOT NULL,
     province VARCHAR(50) NOT NULL,
     postal_code VARCHAR(7) NOT NULL,
