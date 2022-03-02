@@ -19,7 +19,7 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         </form>
         
-		<p><a href="/">Back to store list</a></p>
+		<p><a href="/stores">Back to store list</a></p>
 		<c:forEach var="store" items="${store.rows}">
 			<h2><c:out value = "${store.store_name}"/></h2>
 		</c:forEach>

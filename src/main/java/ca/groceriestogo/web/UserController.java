@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * A controller class designed for handling the routing and functionality of the application
+ * A controller class designed for handling the routing and functionality of the user information
  * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
  * @version 1.0 (2022-02-12)
  * @since 1.0
@@ -118,16 +118,6 @@ public class UserController {
 	@RequestMapping(value = {"/about"}, method = RequestMethod.GET)
 	public String about(Model model) {
 		return "about";
-	}
-	
-	/**
-     * Stores file route
-     * @param model The model being passed
-     * @return the test view
-     **/
-	@RequestMapping(value = {"/stores"}, method = RequestMethod.GET)
-	public String stores(Model model) {
-		return "stores";
 	}
 	
 	/**
