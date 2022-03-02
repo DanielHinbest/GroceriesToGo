@@ -29,6 +29,7 @@ CREATE TABLE Store (
     city VARCHAR(50) NOT NULL,
     province VARCHAR(50) NOT NULL,
     postal_code VARCHAR(7) NOT NULL,
+    enabled BOOLEAN DEFAULT true,
     PRIMARY KEY (store_id)
 ) AUTO_INCREMENT=1;
 
@@ -36,9 +37,7 @@ DROP TABLE IF EXISTS Department;
 CREATE TABLE Department (
 	department_id INTEGER NOT NULL AUTO_INCREMENT,
     department_name VARCHAR(25) NOT NULL,
-    store_id INTEGER,
-    PRIMARY KEY (department_id),
-    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+    PRIMARY KEY (department_id)
 );
 
 DROP TABLE IF EXISTS Item;
