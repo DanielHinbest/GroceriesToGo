@@ -22,7 +22,7 @@
   <div class="row">
   <div class="column">
     <div class="card">
-      <img src="img1.jpg" alt="Ryan" style="width:100%">
+      <img src="${contextPath}/resources/images/RyanClayson.jpg" alt="Ryan" style="width:100%">
       <div class="container">
         <h2>Ryan Clayson</h2>
         <p class="title">Front-end Development</p>
@@ -48,8 +48,8 @@
 
   <div class="column">
     <div class="card">
-      <img src="img3.jpg" alt="Yash" style="width:100%">
-      <div class="container">
+      <img src="${contextPath}/resources/images/Yashpic.jpg" alt="Yash" style="width:100%">
+      <div class="container" style="width:300%">
         <h2>Yash Gadhiya</h2>
         <p class="title">Back-end Development</p>
         <p>Some text that describes me lorem dfgfdg ipsum ipsum lorem.</p>

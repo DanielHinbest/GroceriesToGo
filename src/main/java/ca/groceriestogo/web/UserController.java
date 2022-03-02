@@ -109,4 +109,44 @@ public class UserController {
 	public String test(Model model) {
 		return "test";
 	}
+	
+	 /**
+     * About file route
+     * @param model The model being passed
+     * @return the test view
+     **/
+	@RequestMapping(value = {"/about"}, method = RequestMethod.GET)
+	public String about(Model model) {
+		return "about";
+	}
+	
+	/**
+     * Stores file route
+     * @param model The model being passed
+     * @return the test view
+     **/
+	@RequestMapping(value = {"/stores"}, method = RequestMethod.GET)
+	public String stores(Model model) {
+		return "stores";
+	}
+	
+	/**
+     * Store locator file route
+     * @param model The model being passed
+     * @return the test view
+     **/
+	@RequestMapping(value = {"/storelocator"}, method = RequestMethod.GET)
+	public String storelocator(Model model) {
+		return "storelocator";
+	}
+	
+	/**
+     * Order History file route
+     * @param model The model being passed
+     * @return the test view
+     **/
+	@RequestMapping(value = {"/orderhistory"}, method = RequestMethod.GET)
+	public String orderhistory(Model model) {
+		return "orderhistory";
+	}
 }

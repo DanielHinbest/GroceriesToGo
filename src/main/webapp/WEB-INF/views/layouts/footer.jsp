@@ -10,7 +10,7 @@
     <div class="column">
         <h4>Company</h4>
         <ul>
-            <li><a href="#">about us</a></li>
+            <li><a href="about">about us</a></li>
             <li><a href="#">our services</a></li>
             <li><a href="#">privacy policy</a></li>
         </ul>
