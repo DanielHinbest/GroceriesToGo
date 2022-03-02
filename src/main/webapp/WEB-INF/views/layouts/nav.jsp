@@ -5,25 +5,28 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Option1</a>
+        <a class="nav-link" href="index">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Option2</a>
+        <a class="nav-link" href="about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Option3</a> 
+        <a class="nav-link" href="stores">Stores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Option4</a> 
+        <a class="nav-link" href="storelocator">Store Locator</a> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="orderhistory">Order History</a> 
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Option5</a> 
+        <a class="nav-link" href="#">FAQ</a> 
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">Option5</a> 
+        <a class="nav-link" href="#">My Account</a> 
       </li>
       </li>
        <li class="nav-item">
