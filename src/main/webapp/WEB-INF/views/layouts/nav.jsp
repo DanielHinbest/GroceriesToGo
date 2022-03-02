@@ -5,11 +5,8 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-<<<<<<< HEAD
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-=======
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
->>>>>>> branch 'main' of https://github.com/DanielHinbest/GroceriesToGo
       </li>
       <li class="nav-item">
         <a class="nav-link" href="index">Home</a>
