@@ -1,3 +1,8 @@
+<!-- 
+	Groceries To Go
+	Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+	March 1, 2022
+ -->
 <% 
 	// Find a way to change to store name
 	String title = "Select Items"; 
@@ -15,10 +20,6 @@
 	<c:if test="${pageContext.request.userPrincipal.name == null}">
 		<% response.sendRedirect("/login");	%>
 	</c:if>
-    	<form id="logoutForm" method="POST" action="${contextPath}/logout">
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        </form>
-        
 		<p><a href="/stores">Back to store list</a></p>
 		<c:forEach var="store" items="${store.rows}">
 			<h2><c:out value = "${store.store_name}"/></h2>

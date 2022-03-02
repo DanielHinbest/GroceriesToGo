@@ -42,3 +42,6 @@
 <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
          url = "jdbc:mysql://localhost:3306/groceriestogo?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehaviour=convertToNull"
          user = "root"  password = "password"/>
+<form id="logoutForm" method="POST" action="${contextPath}/logout">
+	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+</form>

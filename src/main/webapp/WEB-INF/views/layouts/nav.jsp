@@ -5,11 +5,12 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/">
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="index">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about">About</a>
@@ -26,6 +27,7 @@
        <li class="nav-item">
         <a class="nav-link" href="#">FAQ</a> 
       </li>
+      
        <li class="nav-item">
         <a class="nav-link" href="#">My Account</a> 
       </li>

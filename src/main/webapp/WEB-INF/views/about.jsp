@@ -4,10 +4,8 @@
 	February 20, 2022
  -->
 <% String title = "Welcome"; %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="layouts/header.jsp"%>
-
+	
   <h3>About</h3>
   <p>Groceries to Go is an online grocery platform. This websitre allows shoppers to grocery shop for whichever products they
   desire. With both pick-up and delivery options, Groceries to Go is committed to bring fresh groceries and everyday essentials

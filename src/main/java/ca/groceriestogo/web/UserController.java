@@ -68,7 +68,7 @@ public class UserController {
 		
 		securityService.autologin(userForm.getUsername(), userForm.getPasswordConfirm());
 		
-		return "redirect:/index"; 
+		return "redirect:/"; 
 	}
 	
 	/**
@@ -91,52 +91,8 @@ public class UserController {
 		return "login";
 	}
 	
-	/**
-	 * The routing for the home page after a successful login
-	 * @param model The user model that is logged in
-	 * @return The home page view
-	 */
-	@RequestMapping(value = {"/", "/index"}, method = RequestMethod.GET)
-	public String welcome(Model model) {
-		return "index";
-	}
-    /**
-     * Test file route
-     * @param model The model being passed
-     * @return the test view
-     **/
-	@RequestMapping(value = {"/test"}, method = RequestMethod.GET)
-	public String test(Model model) {
-		return "test";
-	}
 	
-	 /**
-     * About file route
-     * @param model The model being passed
-     * @return the test view
-     **/
-	@RequestMapping(value = {"/about"}, method = RequestMethod.GET)
-	public String about(Model model) {
-		return "about";
-	}
+    
 	
-	/**
-     * Store locator file route
-     * @param model The model being passed
-     * @return the test view
-     **/
-	@RequestMapping(value = {"/storelocator"}, method = RequestMethod.GET)
-	public String storelocator(Model model) {
-		return "storelocator";
-	}
-	
-	/**
-     * Order History file route
-     * @param model The model being passed
-     * @return the test view
-     **/
-	@RequestMapping(value = {"/orderhistory"}, method = RequestMethod.GET)
-	public String orderhistory(Model model) {
-		return "orderhistory";
-	}
+	 
 }

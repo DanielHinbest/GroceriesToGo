@@ -1,3 +1,8 @@
+<!-- 
+	Groceries To Go
+	Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+	March 1, 2022
+ -->
 <% String title = "Home"; %>
 <%@ include file="layouts/header.jsp"%>
 <c:set var = "username" value = "${pageContext.request.userPrincipal.name}"/>
@@ -9,9 +14,6 @@
 <div class="container">
 
     <c:if test="${pageContext.request.userPrincipal.name != null}">
-        <form id="logoutForm" method="POST" action="${contextPath}/logout">
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        </form>
 
 		<c:forEach var="row" items="${result.rows}">
         	<h2>Welcome <c:out value = "${row.firstName}"/></h2>

@@ -4,10 +4,7 @@
 	March 1, 2022
  -->
 <% String title = "Welcome"; %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ include file="layouts/header.jsp"%>
-
   <h3>Store Locator</h3>
   <p>Some google maps store api thing???</p>
   <p>Some text that describes me lorem dfgfdg ipsum ipsum lorem.</p>

@@ -14,9 +14,7 @@
 		<% response.sendRedirect("/login"); %>
 	</c:if>
 	<c:if test="${pageContext.request.userPrincipal.name != null}">
-	        <form id="logoutForm" method="POST" action="${contextPath}/logout">
-	            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-	        </form>
+	        
 	  <h3>Our Stores</h3>
 	  <p>Some text that describes me lorem dfgfdg ipsum ipsum lorem.
 	  </p>

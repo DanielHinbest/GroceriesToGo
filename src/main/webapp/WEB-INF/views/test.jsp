@@ -1,3 +1,4 @@
+<% String title = "test"; %>
 <%@ include file="layouts/header.jsp"%>
 
 <div class="container">
