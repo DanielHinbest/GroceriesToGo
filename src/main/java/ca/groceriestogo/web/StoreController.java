@@ -32,9 +32,9 @@ public class StoreController {
 	 * @return The store items view
 	 */
 	@RequestMapping(value="/stores/{store_id}", method=RequestMethod.GET)
-	public String storeItems(Model model, @PathVariable int store_id) {		
+	public String storeProducts(Model model, @PathVariable int store_id) {		
 		model.addAttribute("store", store_id);
-		return "store_items";
+		return "store_products";
 	}
 	
 	/**
