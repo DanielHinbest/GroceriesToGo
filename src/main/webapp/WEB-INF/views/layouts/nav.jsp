@@ -13,16 +13,19 @@
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about">About</a>
+        <a class="nav-link" href="/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="stores">Stores</a>
+        <a class="nav-link" href="/stores">Stores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="storelocator">Store Locator</a> 
+        <a class="nav-link" href="/store_locator">Store Locator</a> 
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="orderhistory">Order History</a> 
+        <a class="nav-link" href="/order_history">Order History</a> 
+      </li>
+      <li class="nav-item">
+      	<a class="nav-link" href="/cart">Cart</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">FAQ</a> 

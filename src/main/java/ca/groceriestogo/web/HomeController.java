@@ -27,7 +27,7 @@ public class HomeController {
      * @param model The model being passed
      * @return the test view
      **/
-	@RequestMapping(value = {"/test"}, method = RequestMethod.GET)
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
 	public String test(Model model) {
 		return "test";
 	}
@@ -36,7 +36,7 @@ public class HomeController {
      * @param model The model being passed
      * @return the test view
      **/
-	@RequestMapping(value = {"/about"}, method = RequestMethod.GET)
+	@RequestMapping(value = "/about", method = RequestMethod.GET)
 	public String about(Model model) {
 		return "about";
 	}
@@ -46,8 +46,18 @@ public class HomeController {
      * @param model The model being passed
      * @return the test view
      **/
-	@RequestMapping(value = {"/orderhistory"}, method = RequestMethod.GET)
+	@RequestMapping(value = "/order_history", method = RequestMethod.GET)
 	public String orderhistory(Model model) {
 		return "orderhistory";
+	}
+	
+	/**
+	 * Cart file route
+	 * @param model the model with the information for the view
+	 * @return the cart view
+	 */
+	@RequestMapping(value = "/cart", method = RequestMethod.GET)
+	public String cart(Model model) {
+		return "cart";
 	}
 }

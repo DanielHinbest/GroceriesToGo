@@ -42,7 +42,7 @@ public class StoreController {
      * @param model The model being passed
      * @return the test view
      **/
-	@RequestMapping(value = {"/storelocator"}, method = RequestMethod.GET)
+	@RequestMapping(value = "/store_locator", method = RequestMethod.GET)
 	public String storelocator(Model model) {
 		return "storelocator";
 	}
