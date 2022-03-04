@@ -12,7 +12,7 @@
         <ul>
             <li><a href="${contextPath}/about">about us</a></li>
             <li><a href="#">our services</a></li>
-            <li><a href="#">privacy policy</a></li>
+            <li><a href="${contextPath}/privacypolicy">privacy policy</a></li>
         </ul>
     </div>
     <div class="column">
