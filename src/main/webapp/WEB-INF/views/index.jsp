@@ -19,7 +19,7 @@
         	<h2>Welcome <c:out value = "${row.firstName}"/></h2>
 		</c:forEach>
 	
-		<p><a href="/stores">Store list</a></p>
+		<p><a href="${contextPath}/stores">Store list</a></p>
 		
 	
     </c:if>

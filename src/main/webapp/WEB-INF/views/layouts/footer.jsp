@@ -1,7 +1,7 @@
 <!-- /container -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="${contextPath}/resources/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="../../../resources/css/footer.css">
+  <link rel="stylesheet" href="${contextPath}/resources/css/footer.css">
   <!--This link provides the images for social media icons-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
@@ -10,7 +10,7 @@
     <div class="column">
         <h4>Company</h4>
         <ul>
-            <li><a href="about">about us</a></li>
+            <li><a href="${contextPath}/about">about us</a></li>
             <li><a href="#">our services</a></li>
             <li><a href="#">privacy policy</a></li>
         </ul>

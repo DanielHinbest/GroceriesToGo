@@ -5,27 +5,27 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/">
+        <a class="nav-link" href="${contextPath}/">
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="${contextPath}/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about">About</a>
+        <a class="nav-link" href="${contextPath}/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/stores">Stores</a>
+        <a class="nav-link" href="${contextPath}/stores">Stores</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/store_locator">Store Locator</a> 
+        <a class="nav-link" href="${contextPath}/store_locator">Store Locator</a> 
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/order_history">Order History</a> 
+        <a class="nav-link" href="${contextPath}/order_history">Order History</a> 
       </li>
       <li class="nav-item">
-      	<a class="nav-link" href="/cart">Cart</a>
+      	<a class="nav-link" href="${contextPath}/cart">Cart</a>
       </li>
        <li class="nav-item">
         <a class="nav-link" href="#">FAQ</a> 
