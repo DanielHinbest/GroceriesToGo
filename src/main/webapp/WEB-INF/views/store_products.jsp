@@ -5,7 +5,11 @@
  -->
 <% 
 	// Find a way to change to store name
+<<<<<<< HEAD
 	String title = "Select Products"; 
+=======
+	String title = "Select Items"; 
+>>>>>>> branch 'main' of https://github.com/DanielHinbest/GroceriesToGo
 %>
 <%@ include file="layouts/header.jsp"%>
 <c:set var = "username" value = "${pageContext.request.userPrincipal.name}"/>
