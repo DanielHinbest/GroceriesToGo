@@ -4,9 +4,8 @@
 	March 1, 2022
  -->
 <% String title = "Welcome"; %>
-<%@ include file="layouts/header.jsp"%>
-<sql:query dataSource="${snapshot}" var="stores">
-		SELECT * FROM Store ORDER BY city, store_name ASC
+<%@ include file="layouts/header.jsp"%><sql:query dataSource="${snapshot}" var="stores">
+		SELECT * FROM Store ORDER BY city, store_name ASC;
 </sql:query>
 <div class="container">
 	
@@ -16,9 +15,8 @@
 	<c:if test="${pageContext.request.userPrincipal.name != null}">
 	        
 	  <h3>Our Stores</h3>
-	  <p>Some text that describes me lorem dfgfdg ipsum ipsum lorem.
+	  <p>Some text that describes me lorem ipsum ipsum lorem.
 	  </p>
-  
   	<h3>Where would you like to order from today?</h3>
 		
 		<table border="1" width ="66%">
@@ -29,21 +27,25 @@
 				<th>Postal Code</th>
 				<th>Phone Number</th>
 			</tr>
+					
 			
-			<c:forEach var="storeList" items="${stores.rows}">
+			<c:forEach var="row" items="${stores.rows}">
 				<tr>
-					<c:if test="${storeList.enabled}">
-						<td><a href="stores/${storeList.store_id}"><c:out value="${storeList.store_name}"/></a></td>						
+					<c:if test="${row.enabled}">
+						<td><a href="stores/${row.store_id}"><c:out value="${row.store_name}"/></a></td>						
 					</c:if>
-					<c:if test="${!storeList.enabled}">
-						<td><c:out value="${storeList.store_name}"/></td>		
+					<c:if test="${!row.enabled}">
+						<td><c:out value="${row.store_name}"/></td>		
 					</c:if>
-					<td><c:out value="${storeList.address_line_1}"/> <c:out value="${storeList.address_line_2}"/></td>
-					<td><c:out value="${storeList.city}"/></td>
-					<td><c:out value="${storeList.postal_code}"/></td>
-					<td><c:out value="${storeList.phone_number}"/></td>
+					<td><c:out value="${row.address_line_1}"/> <c:out value="${row.address_line_2}"/></td>
+					<td><c:out value="${row.city}"/></td>
+					<td><c:out value="${row.postal_code}"/></td>
+					<td><c:out value="${row.phone_number}"/></td>
 				</tr>
 			</c:forEach>
+			<c:set var="debug">${stores.rows}</c:set>
+			<jsp:useBean id="debug" type="java.lang.String"/>
+			<% System.out.println(debug); %>
 		</table>
   	</c:if>
   </div>

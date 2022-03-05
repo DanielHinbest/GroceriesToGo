@@ -40,16 +40,16 @@ CREATE TABLE Department (
     PRIMARY KEY (department_id)
 );
 
-DROP TABLE IF EXISTS Item;
-CREATE TABLE Item (
-	item_id INTEGER NOT NULL AUTO_INCREMENT,
-    item_name VARCHAR(25) NOT NULL,
-    item_brand VARCHAR(15) NOT NULL,
-    item_stock INTEGER NOT NULL,
-    item_cost DECIMAL(5, 2) NOT NULL,
+DROP TABLE IF EXISTS Product;
+CREATE TABLE Product (
+	product_id INTEGER NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR(255) NOT NULL,
+    product_brand VARCHAR(15),
+    product_stock INTEGER NOT NULL,
+    product_cost DECIMAL(5, 2) NOT NULL,
     department_id INTEGER NOT NULL,
     store_id INTEGER,
-    PRIMARY KEY (item_id),
+    PRIMARY KEY (product_id),
     FOREIGN KEY (department_id) REFERENCES Department(department_id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) AUTO_INCREMENT=1;

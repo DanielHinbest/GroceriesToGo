@@ -57,7 +57,7 @@ INSERT INTO Store VALUES (
     'Bowmanville',
     'Ontario',
     'L1C 3X1',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -69,7 +69,7 @@ INSERT INTO Store VALUES (
     'Oshawa',
     'Ontario',
     'L1G 3V2',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -81,7 +81,7 @@ INSERT INTO Store VALUES (
     'Whitby',
     'Ontario',
     'L1N 0E4',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -93,7 +93,7 @@ INSERT INTO Store VALUES (
     'Ajax',
     'Ontario',
     'L1T 0J9',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -105,7 +105,7 @@ INSERT INTO Store VALUES (
     'Bowmanville',
     'Ontario',
     'L1C 0C7',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -117,7 +117,7 @@ INSERT INTO Store VALUES (
     'Oshawa',
     'Ontario',
     'L1L 0R1',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -129,7 +129,7 @@ INSERT INTO Store VALUES (
     'Whitby',
     'Ontario',
     'L1N 4K4',
-    true
+    false
 );
 
 INSERT INTO Store VALUES (
@@ -141,5 +141,5 @@ INSERT INTO Store VALUES (
     'Pickering',
     'Ontario',
     'L1V 1A6',
-    true
+    false
 );
