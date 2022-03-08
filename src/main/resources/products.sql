@@ -25,7 +25,7 @@ INSERT INTO Product VALUES (
     'Advil',
     10,
     5.99,
-    7,
+    1,
     1
 );
 -- Shoppers - Brock Gilbert
@@ -53,7 +53,7 @@ INSERT INTO Product VALUES (
     'Advil',
     10,
     5.99,
-    7,
+    1,
     2
 );
 -- Shoppers - Pickering Town Centre
@@ -81,7 +81,7 @@ INSERT INTO Product VALUES (
     'Advil',
     10,
     5.99,
-    7,
+    1,
     3
 );
 -- Shoppers - Bowmanville Mall
@@ -109,6 +109,6 @@ INSERT INTO Product VALUES (
     'Advil',
     10,
     5.99,
-    7,
+    1,
     4
 );
