@@ -1,0 +1,3 @@
+<c:set var="debug">value</c:set>
+<jsp:useBean id="debug" type="data_type"/>
+<% System.out.println(debug); %>

@@ -9,8 +9,8 @@
 %>
 <%@ include file="layouts/header.jsp"%>
 <c:set var = "username" value = "${pageContext.request.userPrincipal.name}"/>
-<sql:query dataSource="${snapshot}" var="users">
-	SELECT * FROM User WHERE username = ?;
+<sql:query dataSource="${snapshot}" var="result">
+	SELECT * FROM User WHERE username = ?
 	<sql:param value="${username}"/>
 </sql:query>
 <sql:query dataSource="${snapshot}" var="stores">
@@ -27,8 +27,8 @@
 	SELECT * FROM Department
 </sql:query>
 
-<c:forEach var="user" items="${users.rows}">
-	<c:set var="user_id" value="${user.user_id}"/>
+<c:forEach var="users" items="${result.rows }">
+	<c:set var="user_id" value="${users.id }"/>
 </c:forEach>
 
 <c:forEach var="row" items="${stores.rows}">
@@ -51,6 +51,7 @@
 				<th>Department</th>
 			</tr>
 			<c:forEach var="product_list" items="${product.rows}">
+				
 				<sql:update dataSource="${snapshot}" var="add_to_cart">
 					INSERT INTO CartItem (product_id, store_id, user_id) VALUES (?, ?, ?);
 					<sql:param value="${product_list.product_id}"/>

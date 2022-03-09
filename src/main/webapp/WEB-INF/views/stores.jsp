@@ -43,9 +43,6 @@
 					<td><c:out value="${row.phone_number}"/></td>
 				</tr>
 			</c:forEach>
-			<c:set var="debug">${stores.rows}</c:set>
-			<jsp:useBean id="debug" type="java.lang.String"/>
-			<% System.out.println(debug); %>
 		</table>
   	</c:if>
   </div>
