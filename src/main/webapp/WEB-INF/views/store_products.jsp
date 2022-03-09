@@ -50,8 +50,7 @@
 				<th>Cost</th>
 				<th>Department</th>
 			</tr>
-			<c:forEach var="product_list" items="${product.rows}">
-				
+			<c:forEach var="product_list" items="${product.rows}">				
 				<sql:update dataSource="${snapshot}" var="add_to_cart">
 					INSERT INTO CartItem (product_id, store_id, user_id) VALUES (?, ?, ?);
 					<sql:param value="${product_list.product_id}"/>
@@ -67,7 +66,7 @@
 							<td><c:out value="${departmentList.department_name}"/></td>
 						</c:if>
 					</c:forEach>
-					<td><a href="#">Add to cart</a></td>
+    				<td><button class="btn btn-primary btn-block" type="submit">Add To Cart</button></td>
 				</tr>
 			</c:forEach>
 		</table>
