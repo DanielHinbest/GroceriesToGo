@@ -73,10 +73,10 @@ CREATE TABLE `Order` (
     number_of_items INTEGER NOT NULL,
     order_date DATE NOT NULL,
     user_id INTEGER,
-    store_id INTEGER,
+    product_id INTEGER,
     PRIMARY KEY (order_id),
     FOREIGN KEY (user_id) REFERENCES User(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    FOREIGN KEY (store_id) REFERENCES Store(store_id) ON DELETE CASCADE ON UPDATE CASCADE
+    FOREIGN KEY (product_id) REFERENCES Product(product_id) ON DELETE CASCADE ON UPDATE CASCADE
 ) AUTO_INCREMENT=1;
 
 DROP TABLE IF EXISTS Role;
