@@ -70,4 +70,14 @@ public class HomeController {
 	public String privacypolicy(Model model) {
 		return "privacypolicy";
 	}
+	
+	/**
+	 * FAQ file route
+	 * @param model the model with the information for the view
+	 * @return the privacy policy view
+	 */
+	@RequestMapping(value = "/FAQ", method = RequestMethod.GET)
+	public String faq(Model model) {
+		return "faq";
+	}
 }
