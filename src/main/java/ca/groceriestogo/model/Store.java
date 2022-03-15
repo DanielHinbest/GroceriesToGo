@@ -170,5 +170,14 @@ public class Store {
 		this.postalCode = postalCode;
 	}
     
-    
+    public Store(int storeId, String storeName, String phoneNumber, String addressLine1, String addressLine2, String city, String province, String postalCode) {
+		setStoreId(storeId);
+		setStoreName(storeName);
+		setPhoneNumber(phoneNumber);
+		setAddressLine1(addressLine1);
+		setAddressLine2(addressLine2);
+		setCity(city);
+		setProvince(province);
+		setPostalCode(postalCode);
+	}
 }
