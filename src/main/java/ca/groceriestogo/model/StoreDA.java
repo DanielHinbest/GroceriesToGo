@@ -123,11 +123,16 @@ public class StoreDA {
     }
 
     public static Vector<Store> recommendedList(Vector<Store> storeList, String postalCode) {
-        Iterator i = storeList.iterator();
-        while (i.hasNext()) {
-            if (postalCode.substring(0,3) == storeList.get(0).getPostalCode().toString().substring(0,3)) {
-                recommendedStores.addElement(storeList.get(0));
-                i.next();
+
+        String potentialCode = null;
+        String subString1 = postalCode.substring(0,3);
+
+
+        for (int i=0; i<storeList.size(); i++) {
+            potentialCode =  storeList.get(i).getPostalCode();
+            String subString2 = potentialCode.substring(0,3);
+            if (subString1.equals(subString2)) {
+                recommendedStores.addElement(storeList.get(i));
             }
         }
         return recommendedStores;
