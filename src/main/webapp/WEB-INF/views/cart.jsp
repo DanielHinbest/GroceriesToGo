@@ -28,23 +28,26 @@
 	</c:if>
 	<h2>Your cart</h2>
 	
-	<table border="1" width="66%">
-		<tr>
-			<th>Item</th>
-			<th>Brand</th>
-			<th>Cost</th>
-			<th>Store</th>
-		</tr>
-		<c:forEach var="cart" items="${cart_items.rows}">
+	<form method="POST" action="${contextPath}/cart">
+		<table border="1" width="66%">
 			<tr>
-				<td><c:out value="${cart.product_name}"/></td>
-				<td><c:out value="${cart.product_brand}"/></td>
-				<td><c:out value="${cart.product_cost}"/></td>
-				<td><c:out value="${cart.store_name}"/></td>
-				<td><a href="#">Remove</a></td>
+				<th>Item</th>
+				<th>Brand</th>
+				<th>Cost</th>
+				<th>Store</th>
 			</tr>
-		</c:forEach>
-	</table>
-    <button class="btn btn-primary btn-block" type="submit">Checkout</button>
+			<c:forEach var="cart" items="${cart_items.rows}">
+				<tr>
+					<td><c:out value="${cart.product_name}"/></td>
+					<td><c:out value="${cart.product_brand}"/></td>
+					<td><c:out value="${cart.product_cost}"/></td>
+					<td><c:out value="${cart.store_name}"/></td>
+					<td><a href="#">Remove</a></td>
+				</tr>
+			</c:forEach>
+		</table>
+         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+    	<button class="btn btn-primary btn-block" type="submit">Checkout</button>
+    </form>
 </div>
 <%@ include file="layouts/footer.jsp"%>
