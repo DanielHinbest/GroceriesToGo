@@ -28,6 +28,78 @@ INSERT INTO Product VALUES (
     1,
     1
 );
+INSERT INTO Product VALUES (
+	4,
+    'Isoproyl Rubbing Alcohol',
+    'Life',
+    21,
+    6.79,
+    1,
+    1
+);
+INSERT INTO Product VALUES (
+	5,
+    'Arthritis Pain Reliever',
+    'Tylenol',
+    19,
+    18.99,
+    1,
+    1
+);
+INSERT INTO Product VALUES (
+	6,
+    'Early Defence Spray 15mL',
+    'Vicks',
+    21,
+    15.49,
+    1,
+    1
+);
+INSERT INTO Product VALUES (
+	7,
+    'Alcohol Swabs, Isopropyl',
+    'Life',
+    19,
+    3.49,
+    1,
+    1
+);
+INSERT INTO Product VALUES (
+	8,
+    'Venus Sensitive Disposable Razors',
+    'Gillette',
+    30,
+    13.99,
+    2,
+    1
+);
+INSERT INTO Product VALUES (
+	9,
+    'Skin Relief Shave Gel',
+    'Aveeno',
+    29,
+    7.99,
+    2,
+    1
+);
+INSERT INTO Product VALUES (
+	10,
+    'Nose, Ear & Eyebrow Trimmer',
+    'Philips',
+    10,
+    21.99,
+    2,
+    1
+);
+INSERT INTO Product VALUES (
+	11,
+    'Nose, Ear & Eyebrow Trimmer',
+    'Philips',
+    10,
+    21.99,
+    2,
+    1
+);
 -- Shoppers - Brock Gilbert
 INSERT INTO Product VALUES (
 	4,
