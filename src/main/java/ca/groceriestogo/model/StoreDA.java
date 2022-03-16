@@ -8,15 +8,33 @@ import java.sql.*;
 import java.util.Iterator;
 import java.util.Vector;
 
+/**
+ * The data access for the store
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-03-16)
+ * @since 1.0
+ */
 public class StoreDA {
 
+	/**
+	 * A vector of stores
+	 */
     static Vector<Store> stores = new Vector<Store>();
+    /**
+     * A vector of recommended stores
+     */
     static Vector<Store> recommendedStores = new Vector<Store>();
-
+    /**
+     * A store object
+     */
     static Store aStore;
-
+    /**
+     * A connnection
+     */
     static Connection aConnection;
-
+    /**
+     * A statement
+     */
     static Statement aStatement;
 
     /**
@@ -62,7 +80,7 @@ public class StoreDA {
 
     /**
      * initializes the connection to the database
-     * @param c
+     * @param c the connection value
      * */
     public static void initialize(Connection c)
     {
@@ -86,7 +104,10 @@ public class StoreDA {
         catch (SQLException e)
         { System.out.println(e);	}
     }
-
+    /**
+     * Retrieve all the stores
+     * @return  the stores
+     */
     public static Vector<Store> retrieveAll() {
         try
         {
@@ -122,6 +143,12 @@ public class StoreDA {
         return stores;
     }
 
+    /**
+     * Provide a list of recommended stores
+     * @param storeList The store list
+     * @param postalCode The postal code
+     * @return the list of stores
+     */
     public static Vector<Store> recommendedList(Vector<Store> storeList, String postalCode) {
 
         String potentialCode = null;

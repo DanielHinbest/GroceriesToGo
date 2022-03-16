@@ -170,6 +170,17 @@ public class Store {
 		this.postalCode = postalCode;
 	}
     
+	/**
+	 * Store constructor to create a new store
+	 * @param storeId The store ID
+	 * @param storeName The store name
+	 * @param phoneNumber The phone number
+	 * @param addressLine1 The main address
+	 * @param addressLine2 Additional address information
+	 * @param city The city
+	 * @param province The province it is in
+	 * @param postalCode The store postal code
+	 */
     public Store(int storeId, String storeName, String phoneNumber, String addressLine1, String addressLine2, String city, String province, String postalCode) {
 		setStoreId(storeId);
 		setStoreName(storeName);
