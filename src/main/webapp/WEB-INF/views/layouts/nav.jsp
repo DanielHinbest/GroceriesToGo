@@ -34,10 +34,17 @@
        <li class="nav-item">
         <a class="nav-link" href="#">My Account</a> 
       </li>
-      </li>
+      </li>      
+    	<c:if test="${pageContext.request.userPrincipal.name != null}">
        <li class="nav-item">
         <a class="nav-link" onclick="document.forms['logoutForm'].submit()" href="#">Logout</a> 
       </li>
+      </c:if>
+      <c:if test="${pageContext.request.userPrincipal.name == null}">
+       <li class="nav-item">
+        <a class="nav-link" href="${contextPath}/login">Login</a> 
+      </li>
+      </c:if>
     </ul>
   </div>
 </nav>
