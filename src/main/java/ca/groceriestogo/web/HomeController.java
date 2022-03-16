@@ -52,16 +52,6 @@ public class HomeController {
 	}
 	
 	/**
-	 * Cart file route
-	 * @param model the model with the information for the view
-	 * @return the cart view
-	 */
-	@RequestMapping(value = "/cart", method = RequestMethod.GET)
-	public String cart(Model model) {
-		return "cart";
-	}
-	
-	/**
 	 * Privacy Policy file route
 	 * @param model the model with the information for the view
 	 * @return the privacy policy view
@@ -69,5 +59,15 @@ public class HomeController {
 	@RequestMapping(value = "/privacypolicy", method = RequestMethod.GET)
 	public String privacypolicy(Model model) {
 		return "privacypolicy";
+	}
+	
+	/**
+	 * FAQ file route
+	 * @param model the model with the information for the view
+	 * @return the privacy policy view
+	 */
+	@RequestMapping(value = "/FAQ", method = RequestMethod.GET)
+	public String faq(Model model) {
+		return "faq";
 	}
 }
