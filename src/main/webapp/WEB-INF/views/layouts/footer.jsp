@@ -18,7 +18,7 @@
     <div class="column">
         <h4>Get Help</h4>
         <ul>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="${contextPath}/FAQ">FAQ</a></li>
             <li><a href="#">Order Status</a></li>
             <li><a href="#">Payment Options</a></li>
         </ul>
