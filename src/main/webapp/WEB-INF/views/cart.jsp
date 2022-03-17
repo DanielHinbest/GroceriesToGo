@@ -14,7 +14,7 @@
 	<c:set var="user_id" value="${users.id }"/>
 </c:forEach>
 <sql:query dataSource="${snapshot}" var="cart_items">
-	SELECT product_name, product_brand, product_cost, store_name
+	SELECT product_name, product_brand, product_cost, store_name, cart_item_id
 	FROM CartItem
 	INNER JOIN Product ON CartItem.product_id = Product.product_id
 	INNER JOIN Store ON CartItem.store_id = Store.store_id
@@ -28,7 +28,6 @@
 	</c:if>
 	<h2>Your cart</h2>
 	
-	<form method="POST" action="${contextPath}/cart">
 		<table border="1" width="66%">
 			<tr>
 				<th>Item</th>
@@ -42,12 +41,22 @@
 					<td><c:out value="${cart.product_brand}"/></td>
 					<td><c:out value="${cart.product_cost}"/></td>
 					<td><c:out value="${cart.store_name}"/></td>
-					<td><a href="#">Remove</a></td>
+					<td>					
+						<form action="${contextPath}/cart/${cart.cart_item_id}">
+							<input class="btn btn-primary btn-block" type="submit" value="Remove"/>						
+						</form>
+					</td>
 				</tr>
 			</c:forEach>
-		</table>
-         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-    	<button class="btn btn-primary btn-block" type="submit">Checkout</button>
-    </form>
+			<tr>
+				<td colspan="5">
+					<form method="POST" action="${contextPath}/cart">
+			         	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+			    		<button class="btn btn-primary btn-block" type="submit">Checkout</button>
+			    	</form>
+				</td>
+			</tr>
+		</table>	
+		
 </div>
 <%@ include file="layouts/footer.jsp"%>

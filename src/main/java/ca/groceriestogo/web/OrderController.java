@@ -49,4 +49,10 @@ public class OrderController {
 	public String checkout(Model model) {
 		return "checkout";
 	}
+	
+	@RequestMapping(value="/cart/{cart_item_id}", method=RequestMethod.GET)
+	public String removeItemFromCart(Model model, @PathVariable int cart_item_id) {
+		model.addAttribute("cart_item", cart_item_id);
+		return "remove_item_from_cart";
+	}
 }
