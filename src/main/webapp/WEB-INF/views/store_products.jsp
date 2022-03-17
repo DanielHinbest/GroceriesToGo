@@ -32,6 +32,7 @@
 </c:forEach>
 
 <c:forEach var="row" items="${stores.rows}">
+	<c:set var="store_id" value="${row.store_id}"/>
 	<c:set var="store_name" value="${row.store_name}"/>
 </c:forEach>
 
@@ -50,13 +51,7 @@
 				<th>Cost</th>
 				<th>Department</th>
 			</tr>
-			<c:forEach var="product_list" items="${product.rows}">				
-				<sql:update dataSource="${snapshot}" var="add_to_cart">
-					INSERT INTO CartItem (product_id, store_id, user_id) VALUES (?, ?, ?);
-					<sql:param value="${product_list.product_id}"/>
-					<sql:param value="${store}"/>
-					<sql:param value="${user_id}"/>
-				</sql:update>
+			<c:forEach var="product_list" items="${product.rows}">			
 				<tr>
 					<td><c:out value="${product_list.product_name}"/></td>
 					<td><c:out value="${product_list.product_brand}"/></td>
@@ -66,7 +61,11 @@
 							<td><c:out value="${departmentList.department_name}"/></td>
 						</c:if>
 					</c:forEach>
-    				<td><button class="btn btn-primary btn-block" type="submit">Add To Cart</button></td>
+    				<td>
+    					<form action="${contextPath}/stores/${store_id}/${product_list.product_id}">
+    						<input class="btn btn-primary btn-block" type="submit" value="Add To Cart"/>
+						</form>
+    				</td>
 				</tr>
 			</c:forEach>
 		</table>
