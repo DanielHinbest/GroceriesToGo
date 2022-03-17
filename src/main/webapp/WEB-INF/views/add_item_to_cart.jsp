@@ -45,9 +45,6 @@
 		<sql:param value="${store_id}"/>
 		<sql:param value="${user_id}"/>
 	</sql:update>
-	<c:set var="debug">Product: ${product_id} Store: ${store_id} User: ${user_id}</c:set>
-	<jsp:useBean id="debug" type="java.lang.String"/>
-	<% System.out.println(debug); %>
 	<c:set var="store_id">${store_id}</c:set>
 	<jsp:useBean id="store_id" type="java.lang.String"/>
 	<% response.sendRedirect("/stores/" + store_id); %>
