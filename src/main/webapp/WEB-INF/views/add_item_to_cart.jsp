@@ -21,7 +21,7 @@
 	<c:forEach var="user" items="${result.rows}">
 		<c:set var="user_id" value="${user.id }"/>
 	</c:forEach>
-	
+
 	<sql:update dataSource="${snapshot}" var="add_to_cart">
 		INSERT INTO CartItem (product_id, store_id, user_id) VALUES (?, ?, ?);
 		<sql:param value="${product}"/>
