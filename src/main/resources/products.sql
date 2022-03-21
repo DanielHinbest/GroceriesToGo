@@ -102,7 +102,7 @@ INSERT INTO Product VALUES (
 );
 -- Shoppers - Brock Gilbert
 INSERT INTO Product VALUES (
-	4,
+	12,
     '2% Milk',
     'Nielson',
     10,
@@ -111,7 +111,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	5,
+	13,
     '1% Milk',
     'Nielson',
     10,
@@ -120,7 +120,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	6,
+	14,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
@@ -130,7 +130,7 @@ INSERT INTO Product VALUES (
 );
 -- Shoppers - Pickering Town Centre
 INSERT INTO Product VALUES (
-	7,
+	15,
     '2% Milk',
     'Nielson',
     10,
@@ -139,7 +139,7 @@ INSERT INTO Product VALUES (
     3
 );
 INSERT INTO Product VALUES (
-	8,
+	16,
     '1% Milk',
     'Nielson',
     10,
@@ -148,7 +148,7 @@ INSERT INTO Product VALUES (
     3
 );
 INSERT INTO Product VALUES (
-	9,
+	17,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
@@ -158,7 +158,7 @@ INSERT INTO Product VALUES (
 );
 -- Shoppers - Bowmanville Mall
 INSERT INTO Product VALUES (
-	10,
+	18,
     '2% Milk',
     'Nielson',
     10,
@@ -167,7 +167,7 @@ INSERT INTO Product VALUES (
     4
 );
 INSERT INTO Product VALUES (
-	11,
+	19,
     '1% Milk',
     'Nielson',
     10,
@@ -176,7 +176,7 @@ INSERT INTO Product VALUES (
     4
 );
 INSERT INTO Product VALUES (
-	12,
+	20,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
