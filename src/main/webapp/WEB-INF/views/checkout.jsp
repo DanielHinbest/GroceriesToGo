@@ -1,11 +1,38 @@
-<!-- 
+.<!-- 
 	Groceries To Go
 	Daniel Hinbest, Ryan Clayson, Yash Gadhiya
 	March 16, 2022
  -->
-<% String title = "Log in"; %>
+<% String title = "Checkout"; %>
 <%@ include file="layouts/header.jsp"%>
-
+<c:set var="username" value="${pageContext.request.userPrincipal.name}"/>
+<sql:query dataSource="${snapshot}" var="result">
+	SELECT * FROM User WHERE username = ?
+	<sql:param value="${username}"/>
+</sql:query>
+<c:forEach var="users" items="${result.rows }">
+	<c:set var="user_id" value="${users.id }"/>
+</c:forEach>
+<sql:query dataSource="${snapshot}" var="cart_items">
+	SELECT product_name, product_brand, product_cost, store_name, cart_item_id, product_image
+	FROM CartItem
+	INNER JOIN Product ON CartItem.product_id = Product.product_id
+	INNER JOIN Store ON CartItem.store_id = Store.store_id
+	WHERE user_id = ?;
+	<sql:param value="${user_id }"/>
+</sql:query>
+<sql:query dataSource="${snapshot}" var="count_and_cost_query">
+	SELECT user_id, SUM(product_cost) as Cost, COUNT(Product.product_id) as Count
+	FROM CartItem
+	INNER JOIN Product ON CartItem.product_id = Product.product_id
+	WHERE user_id = ?
+	GROUP BY user_id;
+	<sql:param value="${user_id}"/>
+</sql:query>
+<c:forEach var="count_and_cost" items="${count_and_cost_query.rows}">
+	<c:set var="count" value="${count_and_cost.Count }"/>
+	<c:set var="cost" value="${count_and_cost.Cost }"/>
+</c:forEach>
 <div class="container">
 
     <h2>Checkout</h2>
@@ -13,7 +40,7 @@
 <div class="row">
   <div class="col-75">
     <div class="container">
-      <form action="/action_page.php">
+      <form action="#">
 
         <div class="row">
           <div class="col-50">
@@ -81,15 +108,21 @@
       <h4>Cart
         <span class="price" style="color:black">
           <i class="fa fa-shopping-cart"></i>
-          <b>4</b>
+          <b>${count}</b>
         </span>
       </h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+      
+      <c:forEach var="cart" items="${cart_items.rows}">
+      	 <p><c:out value="${cart.product_name}"/><span class="price">${cart.product_cost}</span></p>
+      </c:forEach>
+      <!-- Checkout placeholders
+	      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+	      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+	      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+	      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+	      -->
       <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+      <p>Total <span class="price" style="color:black"><b>$${cost}</b></span></p>
     </div>
   </div>
 </div>
