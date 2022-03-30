@@ -14,7 +14,7 @@
 	<c:set var="user_id" value="${users.id }"/>
 </c:forEach>
 <sql:query dataSource="${snapshot}" var="cart_items">
-	SELECT product_name, product_brand, product_cost, store_name, cart_item_id
+	SELECT product_name, product_brand, product_cost, store_name, cart_item_id, product_image
 	FROM CartItem
 	INNER JOIN Product ON CartItem.product_id = Product.product_id
 	INNER JOIN Store ON CartItem.store_id = Store.store_id
