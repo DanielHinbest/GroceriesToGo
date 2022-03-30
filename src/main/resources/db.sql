@@ -47,6 +47,7 @@ CREATE TABLE Product (
     product_brand VARCHAR(15),
     product_stock INTEGER NOT NULL,
     product_cost DECIMAL(5, 2) NOT NULL,
+    product_image VARCHAR(255) NOT NULL,
     department_id INTEGER NOT NULL,
     store_id INTEGER,
     PRIMARY KEY (product_id),

@@ -53,6 +53,7 @@
 			</tr>
 			<c:forEach var="product_list" items="${product.rows}">			
 				<tr>
+					<td align="center"><img src="${contextPath}/resources/images/products/${product_list.product_image}" alt="Product image" height="100"></td>
 					<td><c:out value="${product_list.product_name}"/></td>
 					<td><c:out value="${product_list.product_brand}"/></td>
 					<td><c:out value="${product_list.product_cost}"/></td>

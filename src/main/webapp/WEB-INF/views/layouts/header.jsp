@@ -40,8 +40,8 @@
 <body>
 <%@ include file="nav.jsp"  %>
 <sql:setDataSource var = "snapshot" driver = "com.mysql.jdbc.Driver"
-         url = "jdbc:mysql://groceriestogo.mysql.database.azure.com:3306/groceriestogo?serverTimezone=UTC"
-         user = "groceriestogo"  password = "capr-6203"/>
+         url = "jdbc:mysql://localhost:3306/groceriestogo?serverTimezone=UTC"
+         user = "root"  password = "password"/>
 <form id="logoutForm" method="POST" action="${contextPath}/logout">
 	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 </form>
