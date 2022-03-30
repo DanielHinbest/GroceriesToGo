@@ -33,6 +33,9 @@
 	<c:set var="count" value="${count_and_cost.Count }"/>
 	<c:set var="cost" value="${count_and_cost.Cost }"/>
 </c:forEach>
+<c:if test="${pageContext.request.userPrincipal.name == null}">
+		<% response.sendRedirect("/login"); %>
+</c:if>
 <div class="container">
 
     <h2>Checkout</h2>
