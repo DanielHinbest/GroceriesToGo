@@ -51,7 +51,7 @@
 				</tr>
 			</c:forEach>
 			<tr>
-				<td colspan="5">
+				<td colspan="6">
 					<form method="POST" action="${contextPath}/cart">
 			         	<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 			    		<button class="btn btn-primary btn-block" type="submit">Checkout</button>
