@@ -30,6 +30,7 @@
 	
 		<table border="1" width="66%">
 			<tr>
+				<th></th>
 				<th>Item</th>
 				<th>Brand</th>
 				<th>Cost</th>
@@ -37,6 +38,7 @@
 			</tr>
 			<c:forEach var="cart" items="${cart_items.rows}">
 				<tr>
+					<td align="center"><img src="${contextPath}/resources/images/products/${cart.product_image}" alt="Product image" height="100"></td>
 					<td><c:out value="${cart.product_name}"/></td>
 					<td><c:out value="${cart.product_brand}"/></td>
 					<td><c:out value="${cart.product_cost}"/></td>

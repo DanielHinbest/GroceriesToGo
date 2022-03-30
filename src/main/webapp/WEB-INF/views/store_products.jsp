@@ -46,6 +46,7 @@
 		
 		<table border="1" width="66%">
 			<tr>
+				<th></th>
 				<th>Product</th>
 				<th>Brand</th>
 				<th>Cost</th>
