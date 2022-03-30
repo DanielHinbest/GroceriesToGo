@@ -14,30 +14,6 @@ INSERT INTO Store VALUES (
 
 INSERT INTO Store VALUES (
 	2,
-    'Shoppers Drug Mart - Brock St S & Gilbert St E',
-    '905-665-6115',
-    '368 Brock St South',
-    null,
-    'Whitby',
-    'Ontario',
-    'L1N 4K4',
-    true
-);
-
-INSERT INTO Store VALUES (
-	3,
-    'Shoppers Drug Mart - Pickering Town Centre',
-    '905-839-4488',
-    '1355 Kingston Road',
-    null,
-    'Pickering',
-    'Ontario',
-    'L1V 1B8',
-    true
-);
-
-INSERT INTO Store VALUES (
-	4,
     'Shoppers Drug Mart - Bowmanville Mall',
     '905-623-2546',
     '243 King St East',
@@ -49,7 +25,7 @@ INSERT INTO Store VALUES (
 );
 
 INSERT INTO Store VALUES (
-	5,
+	3,
     'Metro Bowmanville Mall',
     '905-623-3888',
     '243 King St East',
@@ -61,19 +37,7 @@ INSERT INTO Store VALUES (
 );
 
 INSERT INTO Store VALUES (
-	6,
-    'Metro Oshawa',
-    '905-432-2197',
-    '1265 Ritson Rd. North',
-    null,
-    'Oshawa',
-    'Ontario',
-    'L1G 3V2',
-    false
-);
-
-INSERT INTO Store VALUES (
-	7,
+	4,
     'Metro Victoria West & Gordon',
     '905-666-1610',
     '619 Victoria Street West',
@@ -85,31 +49,7 @@ INSERT INTO Store VALUES (
 );
 
 INSERT INTO Store VALUES (
-	8,
-    'Metro Salem & Taunton',
-    '905-427-5748',
-    '1989 Salem Road North',
-    null,
-    'Ajax',
-    'Ontario',
-    'L1T 0J9',
-    false
-);
-
-INSERT INTO Store VALUES (
-	9,
-    'FreshCo Longworth & Scugog',
-    '905-697-0315',
-    '680 Longworth Avenue',
-    null,
-    'Bowmanville',
-    'Ontario',
-    'L1C 0C7',
-    false
-);
-
-INSERT INTO Store VALUES (
-	10,
+	5,
     'FreshCo Simcoe & Winchester',
     '905-436-9851',
     '2650 Simcoe Street North',
@@ -121,7 +61,7 @@ INSERT INTO Store VALUES (
 );
 
 INSERT INTO Store VALUES (
-	11,
+	6,
     'FreshCo Brock Street & Gilbert',
     '905-666-1691',
     '350 Brock St South',
@@ -133,13 +73,49 @@ INSERT INTO Store VALUES (
 );
 
 INSERT INTO Store VALUES (
-	12,
-    'FreshCo Kingston & Whites',
-    '905-837-8611',
-    '650 Kingston Road',
+	7,
+    'Food 4 Less',
+    '905-579-1161',
+    '385 Stevenson Road',
     null,
-    'Pickering',
+    'Oshawa',
     'Ontario',
-    'L1V 1A6',
+    'L1J 5N5',
+    false
+);
+
+INSERT INTO Store VALUES (
+	8,
+    'Niharika Grocery & Convenience',
+    '905-419-3000',
+    '239 King Street East',
+    null,
+    'Bowmanville',
+    'Ontario',
+    'L1C 1P8',
+    false
+);
+
+INSERT INTO Store VALUES (
+	9,
+    'Pingle Creek Market',
+    '905-668-6374',
+    '728 Anderson Street',
+    null,
+    'Whitby',
+    'Ontario',
+    'L1N 3V6',
+    false
+);
+
+INSERT INTO Store VALUES (
+	10,
+    'Sal\'s Grocery Store',
+    '905-619-0228',
+    '120 Harwood Avenue South',
+    null,
+    'Ajax',
+    'Ontario',
+    'L1S 2H6',
     false
 );
