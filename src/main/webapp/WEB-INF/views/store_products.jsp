@@ -48,7 +48,7 @@
 			<h2><a href="${store_website}"/>${store_name}</a></h2>
 		</div>
 		<div class="col-50">
-			<span class="price"><p><a href="/stores">Back to store list</a></p></span>
+			<span class="price"><p><a href="${contextPath}/stores">Back to store list</a></p></span>
 		</div>
 	</div>
 	${store_map}

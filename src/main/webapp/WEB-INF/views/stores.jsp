@@ -31,7 +31,7 @@
 			
 			<c:forEach var="row" items="${stores.rows}">
 				<tr>
-					<td><a href="stores/${row.store_id}"><c:out value="${row.store_name}"/></a></td>					
+					<td><a href="${contextPath}stores/${row.store_id}"><c:out value="${row.store_name}"/></a></td>					
 					<td><c:out value="${row.address_line_1}"/> <c:out value="${row.address_line_2}"/></td>
 					<td><c:out value="${row.city}"/></td>
 					<td><c:out value="${row.postal_code}"/></td>

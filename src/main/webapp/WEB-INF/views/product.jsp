@@ -51,7 +51,7 @@
 				<h3><c:out value="${store}"/></h3>
 			</div>
 			<div class="col-25">
-				<span class="price"><p><a href="/stores/${store_id}">Back to ${store}</a></p></span>
+				<span class="price"><p><a href="${contextPath}/stores/${store_id}">Back to ${store}</a></p></span>
 			</div>
 		</div>
 		<div class="row">

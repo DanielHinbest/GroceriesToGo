@@ -91,8 +91,8 @@ public class UserController {
 		return "login";
 	}
 	
-	
-    
-	
-	 
+	@RequestMapping(value = "/user_account", method = RequestMethod.GET)
+	public String userAccount(Model model) {
+		return "user_account";
+	}
 }

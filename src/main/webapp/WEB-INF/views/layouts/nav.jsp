@@ -32,7 +32,7 @@
       </li>
       
        <li class="nav-item">
-        <a class="nav-link" href="#">My Account</a> 
+        <a class="nav-link" href="${contextPath}/user_account">My Account</a> 
       </li>
       </li>      
     	<c:if test="${pageContext.request.userPrincipal.name != null}">
