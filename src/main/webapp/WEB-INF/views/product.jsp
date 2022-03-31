@@ -48,6 +48,7 @@
 		<div class="row">		
 			<div class="col-75">
 				<h1><c:out value="${product_name}"/></h1>
+				<h3><c:out value="${store}"/></h3>
 			</div>
 			<div class="col-25">
 				<span class="price"><p><a href="/stores/${store_id}">Back to ${store}</a></p></span>
