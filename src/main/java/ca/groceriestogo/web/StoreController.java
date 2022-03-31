@@ -37,6 +37,13 @@ public class StoreController {
 		return "store_products";
 	}
 	
+	@RequestMapping(value="/stores/{store_id}/{product_id}", method=RequestMethod.GET)
+	public String productView(Model model, @PathVariable int store_id, @PathVariable int product_id) {
+		model.addAttribute("store", store_id);
+		model.addAttribute("product", product_id);
+		return "product";
+	}
+	
 	/**
      * Store locator file route
      * @param model The model being passed

@@ -33,7 +33,7 @@ public class OrderController {
 	 * @param model A model with attributes
 	 * @return The redirect to the item list
 	 */
-	@RequestMapping(value = "/stores/{store_id}/{product_id}", method = RequestMethod.GET)
+	@RequestMapping(value = "/stores/{store_id}/{product_id}/add", method = RequestMethod.GET)
 	public String addItemToCart(Model model, @PathVariable int product_id, @PathVariable int store_id) {
 		model.addAttribute("store", store_id);
 		model.addAttribute("product", product_id);

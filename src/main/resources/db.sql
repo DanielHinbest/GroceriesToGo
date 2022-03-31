@@ -29,7 +29,9 @@ CREATE TABLE Store (
     city VARCHAR(50) NOT NULL,
     province VARCHAR(50) NOT NULL,
     postal_code VARCHAR(7) NOT NULL,
-    enabled BOOLEAN DEFAULT true,
+    store_location VARCHAR(255) NOT NULL,
+    store_map_html TEXT NOT NULL,
+    store_website VARCHAR(255),
     PRIMARY KEY (store_id)
 ) AUTO_INCREMENT=1;
 
