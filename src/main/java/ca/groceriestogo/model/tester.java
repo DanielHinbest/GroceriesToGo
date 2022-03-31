@@ -9,7 +9,6 @@ public class tester {
         System.out.println("************THIS IS A TESTER FILE***********");
 
         Connection c = null;
-        Store aStore;
 
 
         c = DatabaseConnect.initialize();

@@ -5,7 +5,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.*;
-import java.util.Iterator;
 import java.util.Vector;
 
 /**
