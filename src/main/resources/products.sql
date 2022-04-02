@@ -104,7 +104,7 @@ INSERT INTO Product VALUES (
 
 -- Shoppers - Bowmanville Mall
 INSERT INTO Product VALUES (
-	11,
+	18,
     '2% Milk',
     'Nielson',
     10,
@@ -114,7 +114,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	12,
+	19,
     '1% Milk',
     'Nielson',
     10,
@@ -124,82 +124,12 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	13,
+	20,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
     5.99,
     'advil-advil-tablets-100-units.jpg',
-    1,
-    2
-);
-INSERT INTO Product VALUES (
-	14,
-    'Cough Drops',
-    'Ricola',
-    15,
-    3.49,
-    'ricola.png',
-    1,
-    2
-);
-INSERT INTO Product VALUES (
-	15,
-    'Ristorante Thin Crust Pepperoni Pizza',
-    'Dr. Oetker',
-    15,
-    4.99,
-    'ristorante.png',
-    13,
-    2
-);
-INSERT INTO Product VALUES (
-	16,
-    'Extra Buttery Popcorn 6-Pack',
-    'Orville Redenbacher',
-    12,
-    5.49,
-    'popcorn.png',
-    12,
-    2
-);
-INSERT INTO Product VALUES (
-	17,
-    'AA Batteries 8-Pack',
-    'Energizer',
-    18,
-    10.99,
-    'energizer.png',
-    3,
-    2
-);
-INSERT INTO Product VALUES (
-	18,
-    'Kraft Dinner Original',
-    'Kraft',
-    6,
-    2.69,
-    'kraft_dinner.png',
-    14,
-    2
-);
-INSERT INTO Product VALUES (
-	19,
-    'Omega 3 Large White Eggs',
-    'Burnbrae Farms',
-    20,
-    6.39,
-    'eggs.png',
-    7,
-    2
-);
-INSERT INTO Product VALUES (
-	20,
-    'Complete Whitening + Scope Toothpaste',
-    'Crest',
-    25,
-    1.49,
-    'toothpaste.png',
     1,
     2
 );
@@ -365,4 +295,127 @@ INSERT INTO Product VALUES (
     'mango.jpg',
     9,
     6
+);
+
+-- Pingle Creek Market- Whitby
+
+INSERT INTO Product VALUES (
+	300,
+    'Omega-3 Large White Eggs',
+    'GoldEgg',
+    89,
+    7.78,
+    'goldegg_egg.jpg',
+    4,
+    9
+);
+INSERT INTO Product VALUES (
+	301,
+    'Flexible Fabric Adhesive Bandages',
+    'BAND-AID',
+    100,
+    4.97,
+    'bandaid.jpg',
+    1,
+    9
+);
+INSERT INTO Product VALUES (
+	302,
+    'Apollo Body Wash Pump',
+    'AXE',
+    99,
+    7.97,
+    'axe_bodywash.jpg',
+    2,
+    9
+);
+INSERT INTO Product VALUES (
+	303,
+    '1TB Slim Core',
+    'Playstation 4',
+    5,
+    849.99,
+    'ps4.jpg',
+    3,
+    9
+);
+INSERT INTO Product VALUES (
+	304,
+    'Black Forest Ham',
+    'YourFresh',
+    89,
+    3.99,
+    'blackforest_ham.jpg',
+    5,
+    9
+);
+INSERT INTO Product VALUES (
+	305,
+    'Atlantic Salmon Side',
+    'YourFresh',
+    49,
+    36.52,
+    'atlantic_salmon.jpg',
+    6,
+    9
+);
+INSERT INTO Product VALUES (
+	306,
+    'Natural Cheddar Cheese',
+    'Cracker Barrel',
+    50,
+    5.18,
+    'cheddar_cracker_barrel.jpg',
+    7,
+    9
+);
+INSERT INTO Product VALUES (
+	307,
+    'White Bread',
+    'Dempsters',
+    68,
+    2.57,
+    'dempsters_white.jpg',
+    8,
+    9
+);
+INSERT INTO Product VALUES (
+	308,
+    'Mango, Red',
+    'Sold in singles',
+    89,
+    0.97,
+    'mango.jpg',
+    9,
+    9
+);
+INSERT INTO Product VALUES (
+	309,
+    'Gluten-Free Oatmeal & Raisin',
+    'Enjoy Life',
+    89,
+    0.97,
+    'glutenfree_Oatmeal.jpg',
+    10,
+    9
+);
+INSERT INTO Product VALUES (
+	310,
+    '100 % Vegetarian Soya',
+    'Nutrela',
+    90,
+    3.97,
+    'vegetarian_soy.jpg',
+    11,
+    9
+);
+INSERT INTO Product VALUES (
+	311,
+    'Snack Crackers',
+    'Goldfish',
+    111,
+    3.27,
+    'goldfish_crackers.jpg',
+    12,
+    9
 );
