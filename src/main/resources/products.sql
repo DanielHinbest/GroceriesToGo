@@ -104,7 +104,7 @@ INSERT INTO Product VALUES (
 
 -- Shoppers - Bowmanville Mall
 INSERT INTO Product VALUES (
-	11,
+	18,
     '2% Milk',
     'Nielson',
     10,
@@ -114,7 +114,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	12,
+	19,
     '1% Milk',
     'Nielson',
     10,
@@ -124,7 +124,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	13,
+	20,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
@@ -133,73 +133,166 @@ INSERT INTO Product VALUES (
     1,
     2
 );
+
+
+-- FreshCo - Whitby
 INSERT INTO Product VALUES (
-	14,
-    'Cough Drops',
-    'Ricola',
-    15,
-    3.49,
-    'ricola.png',
+	100,
+    'Ibuprofen Caplets 100 pack 200mg',
+    'Advil',
+    10,
+    5.99,
+    'advil-advil-tablets-100-units.jpg',
     1,
-    2
+    5
 );
 INSERT INTO Product VALUES (
-	15,
-    'Ristorante Thin Crust Pepperoni Pizza',
-    'Dr. Oetker',
-    15,
-    4.99,
-    'ristorante.png',
-    13,
-    2
-);
-INSERT INTO Product VALUES (
-	16,
-    'Extra Buttery Popcorn 6-Pack',
-    'Orville Redenbacher',
-    12,
-    5.49,
-    'popcorn.png',
-    12,
-    2
-);
-INSERT INTO Product VALUES (
-	17,
-    'AA Batteries 8-Pack',
-    'Energizer',
-    18,
-    10.99,
-    'energizer.png',
-    3,
-    2
-);
-INSERT INTO Product VALUES (
-	18,
-    'Kraft Dinner Original',
-    'Kraft',
-    6,
-    2.69,
-    'kraft_dinner.png',
-    14,
-    2
-);
-INSERT INTO Product VALUES (
-	19,
-    'Omega 3 Large White Eggs',
-    'Burnbrae Farms',
-    20,
-    6.39,
-    'eggs.png',
-    7,
-    2
-);
-INSERT INTO Product VALUES (
-	20,
-    'Complete Whitening + Scope Toothpaste',
-    'Crest',
-    25,
-    1.49,
-    'toothpaste.png',
+	101,
+    'Apple, Gala',
+    'Sold in singles',
+    140,
+    0.79,
+    'apple_gala.jpg',
     1,
-    2
+    5
+);
+INSERT INTO Product VALUES (
+	102,
+    'Apple, Honeycrisp',
+    'Sold in singles',
+    120,
+    1.19,
+    'apple_honeycrisp.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	103,
+    'Apple, Granny Smith',
+    'Sold in singles',
+    110,
+    0.99,
+    'apple_grannysmith.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	104,
+    'Banana',
+    'Sold in singles',
+    200,
+    0.30,
+    'banana.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	105,
+    'Banana, Organic',
+    'Sold in singles',
+    100,
+    0.50,
+    'banana_organic.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	106,
+    'Watermelon, Mini Seedless',
+    'Sold in singles',
+    120,
+    4.97,
+    'watermelon_mini.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	107,
+    'Cantaloupe',
+    'Sold in singles',
+    120,
+    2.97,
+    'cantaloupe.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	108,
+    'Zucchini',
+    'Sold in singles',
+    101,
+    0.97,
+    'zucchini.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	109,
+    'Kiwi',
+    'Sold in singles',
+    111,
+    0.87,
+    'kiwi.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	110,
+    'Strawberries',
+    '1lb',
+    109,
+    2.87,
+    'strawberries.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	111,
+    'Orange, Seedless',
+    'Sold in singles',
+    101,
+    1.17,
+    'orange.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	112,
+    'Blueberries',
+    '170g',
+    101,
+    3.97,
+    'blueberries.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	113,
+    'Raspberries',
+    '170g',
+    90,
+    3.97,
+    'raspberries.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	114,
+    'Avacado',
+    'Sold in singles',
+    89,
+    1.67,
+    'avacado.jpg',
+    1,
+    5
+);
+INSERT INTO Product VALUES (
+	115,
+    'Mango, Red',
+    'Sold in singles',
+    89,
+    0.97,
+    'mango.jpg',
+    1,
+    5
 );
