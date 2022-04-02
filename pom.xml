@@ -143,7 +143,7 @@
           <subscriptionId>739f6133-decf-41a9-9fa2-f1a6ab022566</subscriptionId>  
           <resourceGroup>groceriestogo</resourceGroup>  
           <appName>groceriestogo</appName>  
-          <pricingTier>F1</pricingTier>  
+          <pricingTier>D1</pricingTier>  
           <region>canadacentral</region>  
           <runtime> 
             <os>Windows</os>  
