@@ -104,7 +104,7 @@ INSERT INTO Product VALUES (
 
 -- Shoppers - Bowmanville Mall
 INSERT INTO Product VALUES (
-	18,
+	11,
     '2% Milk',
     'Nielson',
     10,
@@ -114,7 +114,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	19,
+	12,
     '1% Milk',
     'Nielson',
     10,
@@ -124,12 +124,82 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	20,
+	13,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
     5.99,
     'advil-advil-tablets-100-units.jpg',
+    1,
+    2
+);
+INSERT INTO Product VALUES (
+	14,
+    'Cough Drops',
+    'Ricola',
+    15,
+    3.49,
+    'ricola.png',
+    1,
+    2
+);
+INSERT INTO Product VALUES (
+	15,
+    'Ristorante Thin Crust Pepperoni Pizza',
+    'Dr. Oetker',
+    15,
+    4.99,
+    'ristorante.png',
+    13,
+    2
+);
+INSERT INTO Product VALUES (
+	16,
+    'Extra Buttery Popcorn 6-Pack',
+    'Orville Redenbacher',
+    12,
+    5.49,
+    'popcorn.png',
+    12,
+    2
+);
+INSERT INTO Product VALUES (
+	17,
+    'AA Batteries 8-Pack',
+    'Energizer',
+    18,
+    10.99,
+    'energizer.png',
+    3,
+    2
+);
+INSERT INTO Product VALUES (
+	18,
+    'Kraft Dinner Original',
+    'Kraft',
+    6,
+    2.69,
+    'kraft_dinner.png',
+    14,
+    2
+);
+INSERT INTO Product VALUES (
+	19,
+    'Omega 3 Large White Eggs',
+    'Burnbrae Farms',
+    20,
+    6.39,
+    'eggs.png',
+    7,
+    2
+);
+INSERT INTO Product VALUES (
+	20,
+    'Complete Whitening + Scope Toothpaste',
+    'Crest',
+    25,
+    1.49,
+    'toothpaste.png',
     1,
     2
 );
