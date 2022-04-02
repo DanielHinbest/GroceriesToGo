@@ -153,7 +153,7 @@ INSERT INTO Product VALUES (
     140,
     0.79,
     'apple_gala.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -163,7 +163,7 @@ INSERT INTO Product VALUES (
     120,
     1.19,
     'apple_honeycrisp.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -173,7 +173,7 @@ INSERT INTO Product VALUES (
     110,
     0.99,
     'apple_grannysmith.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -183,7 +183,7 @@ INSERT INTO Product VALUES (
     200,
     0.30,
     'banana.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -193,7 +193,7 @@ INSERT INTO Product VALUES (
     100,
     0.50,
     'banana_organic.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -203,7 +203,7 @@ INSERT INTO Product VALUES (
     120,
     4.97,
     'watermelon_mini.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -213,7 +213,7 @@ INSERT INTO Product VALUES (
     120,
     2.97,
     'cantaloupe.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -223,7 +223,7 @@ INSERT INTO Product VALUES (
     101,
     0.97,
     'zucchini.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -233,7 +233,7 @@ INSERT INTO Product VALUES (
     111,
     0.87,
     'kiwi.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -243,7 +243,7 @@ INSERT INTO Product VALUES (
     109,
     2.87,
     'strawberries.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -253,7 +253,7 @@ INSERT INTO Product VALUES (
     101,
     1.17,
     'orange.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -263,7 +263,7 @@ INSERT INTO Product VALUES (
     101,
     3.97,
     'blueberries.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -273,7 +273,7 @@ INSERT INTO Product VALUES (
     90,
     3.97,
     'raspberries.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -283,7 +283,7 @@ INSERT INTO Product VALUES (
     89,
     1.67,
     'avacado.jpg',
-    1,
+    9,
     6
 );
 INSERT INTO Product VALUES (
@@ -293,6 +293,6 @@ INSERT INTO Product VALUES (
     89,
     0.97,
     'mango.jpg',
-    1,
+    9,
     6
 );
