@@ -26,7 +26,8 @@ ul{
 }
 .column{
    width: 25%;
-   padding: 0 100px;
+   padding-left: 26%;
+   padding-right: 0%;
 }
 .column h4{
 	font-size: 18px;
@@ -41,7 +42,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #04aa6d;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;

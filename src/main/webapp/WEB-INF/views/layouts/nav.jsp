@@ -1,7 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
@@ -9,31 +6,8 @@
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/stores">Stores</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/store_locator">Store Locator</a> 
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/order_history">Order History</a> 
-      </li>
-      <li class="nav-item">
+      <li class="nav-item" padding: 25px>
       	<a class="nav-link" href="${contextPath}/cart">Cart</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/FAQ">FAQ</a> 
-      </li>
-      
-       <li class="nav-item">
-        <a class="nav-link" href="${contextPath}/user_account">My Account</a> 
-      </li>
       </li>      
     	<c:if test="${pageContext.request.userPrincipal.name != null}">
        <li class="nav-item">
@@ -48,3 +22,47 @@
     </ul>
   </div>
 </nav>
+
+<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/slidebar.css">
+<div class="navigation">
+    <div class="menuToggle"></div>
+    <ul>
+        <li class="list" style="--clr: #000;">
+            <a href="${contextPath}/">
+                <span class="icon"><ion-icon name="home-outline" color="success"></ion-icon></span>
+                <span class="text">Home</span>
+
+            </a>
+        </li>
+        <li class="list" style="--clr: #000;">
+            <a href="${contextPath}/about">
+                <span class="icon"><ion-icon name="people-outline" color="success"></ion-icon></span>
+                <span class="text">About</span>
+
+            </a>
+        </li>
+        <li class="list" style="--clr: #000;">
+            <a href="${contextPath}/stores">
+                <span class="icon"><ion-icon name="storefront-outline" color="success"></ion-icon></span>
+                <span class="text">Stores</span>
+
+            </a>
+        </li>
+        <li class="list" style="--clr: #000;">
+            <a href="${contextPath}/store_locator">
+                <span class="icon"><ion-icon name="location-outline" color="success"></ion-icon></span>
+                <span class="text">Store Locator</span>
+
+            </a>
+        </li>
+        <li class="list" style="--clr: #000;">
+            <a href="${contextPath}/order_history">
+                <span class="icon"><ion-icon name="newspaper-outline" color="success"></ion-icon></span>
+                <span class="text">Order history</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="${contextPath}/resources/js/slidebar.js"></script>
