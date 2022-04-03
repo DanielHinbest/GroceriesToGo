@@ -5,7 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.sql.*;
+import java.util.Iterator;
 import java.util.Vector;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 /**
  * The data access for the store
@@ -162,5 +165,20 @@ public class StoreDA {
             }
         }
         return recommendedStores;
+    }
+
+    public static JSONObject toJSON(Vector<Store> storeList) {
+        JSONObject jsonObject = new JSONObject();
+        for (int i=0; i<storeList.size(); i++) {
+            jsonObject.put( "ID", i);
+
+            JSONArray array = new JSONArray();
+            array.add("store_id: " + storeList.get(i).getStoreId());
+            array.add("store_name: " + storeList.get(i).getStoreName());
+            array.add("city: " + storeList.get(i).getCity());
+
+            jsonObject.put("info", array);
+        }
+        return  jsonObject;
     }
 }

@@ -1,6 +1,8 @@
 package ca.groceriestogo.model;
 import java.sql.Connection;
 import java.util.Vector;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 
 public class tester {
@@ -23,7 +25,10 @@ public class tester {
             System.out.println(listOfStores.get(i).getStoreName());
         }
 
-        System.out.println("REcommended store list");
+//        JSONArray storeJson = StoreDA.StoreJson();
+
+        System.out.println();
+        System.out.println("Recommended store list");
 
         recommendedList = StoreDA.recommendedList(listOfStores, "L1G8G2");
         for (int i=0; i<recommendedList.size(); i++) {
@@ -33,6 +38,10 @@ public class tester {
         StoreDA.terminate();
         DatabaseConnect.terminate();
 
+        JSONObject jsonObject = new JSONObject();
+
+        jsonObject = StoreDA.toJSON(listOfStores);
+        System.out.println(jsonObject);
 
     }
 }

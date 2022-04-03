@@ -78,8 +78,13 @@
       <artifactId>servlet-api</artifactId>  
       <version>2.4</version>  
       <scope>provided</scope> 
-    </dependency>  
-    <dependency> 
+    </dependency>
+      <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+    <dependency>
       <groupId>junit</groupId>  
       <artifactId>junit</artifactId>  
       <version>${junit.version}</version>  
@@ -143,7 +148,7 @@
           <subscriptionId>739f6133-decf-41a9-9fa2-f1a6ab022566</subscriptionId>  
           <resourceGroup>groceriestogo</resourceGroup>  
           <appName>groceriestogo</appName>  
-          <pricingTier>D1</pricingTier>  
+          <pricingTier>F1</pricingTier>  
           <region>canadacentral</region>  
           <runtime> 
             <os>Windows</os>  
