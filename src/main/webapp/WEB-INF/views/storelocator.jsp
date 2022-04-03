@@ -5,6 +5,11 @@
  -->
 <% String title = "Welcome"; %>
 <%@ include file="layouts/header.jsp"%>
+<c:if test="${pageContext.request.userPrincipal.name == null}">
+		<% response.sendRedirect("/login"); %>
+	</c:if>
+	
+	<c:if test="${pageContext.request.userPrincipal.name != null}">
   <h3>Store Locator</h3>
 
   <div class="container">
@@ -21,5 +26,5 @@
           <a id="dirMapLink" target="_blank" href="https://www.bing.com/maps/directions?cp=43.95074511840181~-78.87153625489805&amp;sty=r&amp;lvl=11&amp;rtp=~pos.43.95074511840181_-78.87153625489805____&amp;FORM=MBEDLD">Get Directions</a>
       </div>
   </div>
-  
+  </c:if>
 <%@ include file="layouts/footer.jsp"%>
