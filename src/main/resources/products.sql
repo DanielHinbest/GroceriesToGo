@@ -133,3 +133,401 @@ INSERT INTO Product VALUES (
     1,
     2
 );
+
+
+-- FreshCo - Whitby
+INSERT INTO Product VALUES (
+	100,
+    'Ibuprofen Caplets 100 pack 200mg',
+    'Advil',
+    10,
+    5.99,
+    'advil-advil-tablets-100-units.jpg',
+    1,
+    6
+);
+INSERT INTO Product VALUES (
+	101,
+    'Apple, Gala',
+    'Sold in singles',
+    140,
+    0.79,
+    'apple_gala.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	102,
+    'Apple, Honeycrisp',
+    'Sold in singles',
+    120,
+    1.19,
+    'apple_honeycrisp.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	103,
+    'Apple, Granny Smith',
+    'Sold in singles',
+    110,
+    0.99,
+    'apple_grannysmith.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	104,
+    'Banana',
+    'Sold in singles',
+    200,
+    0.30,
+    'banana.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	105,
+    'Banana, Organic',
+    'Sold in singles',
+    100,
+    0.50,
+    'banana_organic.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	106,
+    'Watermelon, Mini Seedless',
+    'Sold in singles',
+    120,
+    4.97,
+    'watermelon_mini.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	107,
+    'Cantaloupe',
+    'Sold in singles',
+    120,
+    2.97,
+    'cantaloupe.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	108,
+    'Zucchini',
+    'Sold in singles',
+    101,
+    0.97,
+    'zucchini.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	109,
+    'Kiwi',
+    'Sold in singles',
+    111,
+    0.87,
+    'kiwi.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	110,
+    'Strawberries',
+    '1lb',
+    109,
+    2.87,
+    'strawberries.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	111,
+    'Orange, Seedless',
+    'Sold in singles',
+    101,
+    1.17,
+    'orange.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	112,
+    'Blueberries',
+    '170g',
+    101,
+    3.97,
+    'blueberries.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	113,
+    'Raspberries',
+    '170g',
+    90,
+    3.97,
+    'raspberries.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	114,
+    'Avacado',
+    'Sold in singles',
+    89,
+    1.67,
+    'avacado.jpg',
+    9,
+    6
+);
+INSERT INTO Product VALUES (
+	115,
+    'Mango, Red',
+    'Sold in singles',
+    89,
+    0.97,
+    'mango.jpg',
+    9,
+    6
+);
+
+-- Pingle Creek Market- Whitby
+
+INSERT INTO Product VALUES (
+	300,
+    'Omega-3 Large White Eggs',
+    'GoldEgg',
+    89,
+    7.78,
+    'goldegg_egg.jpg',
+    4,
+    9
+);
+INSERT INTO Product VALUES (
+	301,
+    'Flexible Fabric Adhesive Bandages',
+    'BAND-AID',
+    100,
+    4.97,
+    'bandaid.jpg',
+    1,
+    9
+);
+INSERT INTO Product VALUES (
+	302,
+    'Apollo Body Wash Pump',
+    'AXE',
+    99,
+    7.97,
+    'axe_bodywash.jpg',
+    2,
+    9
+);
+INSERT INTO Product VALUES (
+	303,
+    '1TB Slim Core',
+    'Playstation 4',
+    5,
+    849.99,
+    'ps4.jpg',
+    3,
+    9
+);
+INSERT INTO Product VALUES (
+	304,
+    'Black Forest Ham',
+    'YourFresh',
+    89,
+    3.99,
+    'blackforest_ham.jpg',
+    5,
+    9
+);
+INSERT INTO Product VALUES (
+	305,
+    'Atlantic Salmon Side',
+    'YourFresh',
+    49,
+    36.52,
+    'atlantic_salmon.jpg',
+    6,
+    9
+);
+INSERT INTO Product VALUES (
+	306,
+    'Natural Cheddar Cheese',
+    'Cracker Barrel',
+    50,
+    5.18,
+    'cheddar_cracker_barrel.jpg',
+    7,
+    9
+);
+INSERT INTO Product VALUES (
+	307,
+    'White Bread',
+    'Dempsters',
+    68,
+    2.57,
+    'dempsters_white.jpg',
+    8,
+    9
+);
+INSERT INTO Product VALUES (
+	308,
+    'Mango, Red',
+    'Sold in singles',
+    89,
+    0.97,
+    'mango.jpg',
+    9,
+    9
+);
+INSERT INTO Product VALUES (
+	309,
+    'Gluten-Free Oatmeal & Raisin',
+    'Enjoy Life',
+    89,
+    0.97,
+    'glutenfree_Oatmeal.jpg',
+    10,
+    9
+);
+INSERT INTO Product VALUES (
+	310,
+    '100 % Vegetarian Soya',
+    'Nutrela',
+    90,
+    3.97,
+    'vegetarian_soy.jpg',
+    11,
+    9
+);
+INSERT INTO Product VALUES (
+	311,
+    'Snack Crackers',
+    'Goldfish',
+    111,
+    3.27,
+    'goldfish_crackers.jpg',
+    12,
+    9
+);
+
+-- Metro- Whitby
+INSERT INTO Product VALUES (
+	400,
+    'Antibiotic Heal Formula',
+    'Polysporin',
+    100,
+    8.97,
+    'polysporin.jpg',
+    1,
+    4
+);
+INSERT INTO Product VALUES (
+	401,
+    'Silk Finsih Lipstick',
+    'Wet & Wild',
+    100,
+    7.97,
+    'lipstick.jpg',
+    2,
+    4
+);
+INSERT INTO Product VALUES (
+	402,
+    'Wireless Controller',
+    'Xbox',
+    6,
+    74.96,
+    'xbox_controller.jpg',
+    3,
+    4
+);
+INSERT INTO Product VALUES (
+	403,
+    'AAA Angus Beef',
+    'Boneless',
+    40,
+    17.96,
+    'aaa_steak.jpg',
+    4,
+    4
+);
+INSERT INTO Product VALUES (
+	404,
+    'Maple Ham',
+    'Fressh',
+    42,
+    3.99,
+    'maple_ham.jpg',
+    5,
+    4
+);
+INSERT INTO Product VALUES (
+	405,
+    'Haddock Fillets',
+    'OceanJewel',
+    55,
+    12.99,
+    'haddock_fillets.jpg',
+    6,
+    4
+);
+INSERT INTO Product VALUES (
+	406,
+    'Balkan Yogurt',
+    'Astro',
+    25,
+    3.27,
+    'astro_yogurt.jpg',
+    7,
+    4
+);
+INSERT INTO Product VALUES (
+	407,
+    'Snack Crackers',
+    'Goldfish',
+    111,
+    3.27,
+    'goldfish_crackers.jpg',
+    12,
+    4
+);
+INSERT INTO Product VALUES (
+	408,
+    'Avacado',
+    'Sold in singles',
+    89,
+    1.67,
+    'avacado.jpg',
+    9,
+    4
+);
+INSERT INTO Product VALUES (
+	409,
+    '1% Milk',
+    'Nielson',
+    10,
+    5.39,
+    'Nielson_1_milk.jpg',
+    7,
+    4
+);
+INSERT INTO Product VALUES (
+	410,
+    'Alcohol Swabs, Isopropyl',
+    'Life',
+    19,
+    3.49,
+    'Life_Alcohol_Swabs_Isopropyl.jpg',
+    1,
+    4
+);

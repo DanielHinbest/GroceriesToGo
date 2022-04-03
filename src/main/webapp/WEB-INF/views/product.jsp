@@ -10,33 +10,25 @@
 	SELECT * FROM User WHERE username = ?
 	<sql:param value="${username}"/>
 </sql:query>
-<sql:query dataSource="${snapshot}" var="departments">
-	SELECT * FROM Product
-	INNER JOIN Department ON product.department_id = department.department_id
-	WHERE product_id = ?;
+<sql:query dataSource="${snapshot}" var="results">
+	SELECT product_id, product_name, product_brand, product_stock, product_cost, department_name, product_image, Department.department_id, Store.store_id, store_name
+	FROM Product
+	INNER JOIN Store ON Product.store_id = Store.store_id
+    INNER JOIN Department ON Product.department_id = Department.department_id
+	WHERE product_id = ?
+    ORDER BY department_name ASC;
 	<sql:param value="${product}"/>
 </sql:query>
-<c:forEach var="department_row" items="${departments.rows}">
-	<c:set var="department" value="${department_row.department_name}"/>
-</c:forEach>
-<sql:query dataSource="${snapshot}" var="stores">
-	SELECT * FROM Store WHERE store_id = ?;
-	<sql:param value="${store}"/>
-</sql:query>
-
-<sql:query dataSource="${snapshot}" var="product">
-	SELECT * FROM Product WHERE product_id = ?;
-	<sql:param value="${product}"/>
-</sql:query>
-<c:forEach var="store_row" items="${stores.rows}">
-	<c:set var="store" value="${store_row.store_name}"/>
-</c:forEach>
-<c:forEach var="row" items="${product.rows}">
+<c:forEach var="row" items="${results.rows}">
+	<c:set var="product_id" value="${row.product_id}"/>
 	<c:set var="product_name" value="${row.product_name}"/>
 	<c:set var="product_image" value="${row.product_image}"/>
 	<c:set var="product_brand" value="${row.product_brand}"/>
 	<c:set var="product_stock" value="${row.product_stock}"/>
 	<c:set var="product_cost" value="${row.product_cost}"/>
+	<c:set var="store" value="${row.store_name}"/>
+	<c:set var="store_id" value="${row.store_id }"/>
+	<c:set var="department" value="${row.department_name}"/>
 </c:forEach>
 
 <div class="container">
@@ -64,7 +56,7 @@
 				<table>
 					<tr>
 						<td>
-							<form action="${contextPath}/stores/${store_id}/${product_list.product_id}/add">
+							<form action="${contextPath}/stores/${store_id}/${product_id}/add">
 			    				<input class="btn btn-primary btn-block" width="50" type="submit" value="Add To Cart"/>
 							</form>
 						</td>

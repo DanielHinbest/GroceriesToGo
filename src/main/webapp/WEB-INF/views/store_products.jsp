@@ -13,25 +13,22 @@
 	SELECT * FROM User WHERE username = ?
 	<sql:param value="${username}"/>
 </sql:query>
-<sql:query dataSource="${snapshot}" var="stores">
-	SELECT * FROM Store WHERE store_id = ?;
+<sql:query dataSource="${snapshot}" var="results">
+	SELECT product_id, product_name, product_brand, product_cost, department_name, product_image, Department.department_id, Store.store_id, store_name, 
+	store_map_html, store_location, store_website
+	FROM Product
+	INNER JOIN Store ON Product.store_id = Store.store_id
+    INNER JOIN Department ON Product.department_id = Department.department_id
+	WHERE Store.store_id = ?
+    ORDER BY department_name ASC;
 	<sql:param value="${store}"/>
-</sql:query>
-
-<sql:query dataSource="${snapshot}" var="product">
-	SELECT * FROM Product WHERE store_id = ?;
-	<sql:param value="${store}"/>
-</sql:query>
-
-<sql:query dataSource="${snapshot}" var="departments">
-	SELECT * FROM Department
 </sql:query>
 
 <c:forEach var="users" items="${result.rows }">
 	<c:set var="user_id" value="${users.id }"/>
 </c:forEach>
 
-<c:forEach var="row" items="${stores.rows}">
+<c:forEach var="row" items="${results.rows}">
 	<c:set var="store_id" value="${row.store_id}"/>
 	<c:set var="store_name" value="${row.store_name}"/>
 	<c:set var="store_map" value="${row.store_map_html}"/>
@@ -63,19 +60,15 @@
 				<th>Cost</th>
 				<th>Department</th>
 			</tr>
-			<c:forEach var="product_list" items="${product.rows}">			
+			<c:forEach var="product_list" items="${results.rows}">			
 				<tr>
 					<td align="center"><img src="${contextPath}/resources/images/products/${product_list.product_image}" alt="Product image" height="100"></td>
-					<td><a href="${store}/${product_list.product_id}"><c:out value="${product_list.product_name}"/></a></td>
+					<td><a href="${contextPath}/stores/${store}/${product_list.product_id}"><c:out value="${product_list.product_name}"/></a></td>
 					<td><c:out value="${product_list.product_brand}"/></td>
 					<td><c:out value="${product_list.product_cost}"/></td>
-					<c:forEach var="departmentList" items="${departments.rows}">
-						<c:if test="${product_list.department_id == departmentList.department_id}">
-							<td><c:out value="${departmentList.department_name}"/></td>
-						</c:if>
-					</c:forEach>
+					<td><c:out value="${product_list.department_name}"/></td>
     				<td>
-    					<form action="${contextPath}/stores/${store_id}/${product_list.product_id}/add">
+    					<form action="${contextPath}/stores/${store}/${product_list.product_id}/add">
     						<input class="btn btn-primary btn-block" type="submit" value="Add To Cart"/>
 						</form>
     				</td>
