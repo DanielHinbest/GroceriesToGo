@@ -419,3 +419,115 @@ INSERT INTO Product VALUES (
     12,
     9
 );
+
+-- Metro- Whitby
+INSERT INTO Product VALUES (
+	400,
+    'Antibiotic Heal Formula',
+    'Polysporin',
+    100,
+    8.97,
+    'polysporin.jpg',
+    1,
+    4
+);
+INSERT INTO Product VALUES (
+	401,
+    'Silk Finsih Lipstick',
+    'Wet & Wild',
+    100,
+    7.97,
+    'lipstick.jpg',
+    2,
+    4
+);
+INSERT INTO Product VALUES (
+	402,
+    'Wireless Controller',
+    'Xbox',
+    6,
+    74.96,
+    'xbox_controller.jpg',
+    3,
+    4
+);
+INSERT INTO Product VALUES (
+	403,
+    'AAA Angus Beef',
+    'Boneless',
+    40,
+    17.96,
+    'aaa_steak.jpg',
+    4,
+    4
+);
+INSERT INTO Product VALUES (
+	404,
+    'Maple Ham',
+    'Fressh',
+    42,
+    3.99,
+    'maple_ham.jpg',
+    5,
+    4
+);
+INSERT INTO Product VALUES (
+	405,
+    'Haddock Fillets',
+    'OceanJewel',
+    55,
+    12.99,
+    'haddock_fillets.jpg',
+    6,
+    4
+);
+INSERT INTO Product VALUES (
+	406,
+    'Balkan Yogurt',
+    'Astro',
+    25,
+    3.27,
+    'astro_yogurt.jpg',
+    7,
+    4
+);
+INSERT INTO Product VALUES (
+	407,
+    'Snack Crackers',
+    'Goldfish',
+    111,
+    3.27,
+    'goldfish_crackers.jpg',
+    12,
+    4
+);
+INSERT INTO Product VALUES (
+	408,
+    'Avacado',
+    'Sold in singles',
+    89,
+    1.67,
+    'avacado.jpg',
+    9,
+    4
+);
+INSERT INTO Product VALUES (
+	409,
+    '1% Milk',
+    'Nielson',
+    10,
+    5.39,
+    'Nielson_1_milk.jpg',
+    7,
+    4
+);
+INSERT INTO Product VALUES (
+	410,
+    'Alcohol Swabs, Isopropyl',
+    'Life',
+    19,
+    3.49,
+    'Life_Alcohol_Swabs_Isopropyl.jpg',
+    1,
+    4
+);
