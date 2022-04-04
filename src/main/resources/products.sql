@@ -305,6 +305,107 @@ INSERT INTO Product VALUES (
     15,
     3
 );
+-- Sal's Grocery Store - Ajax
+INSERT INTO Product VALUES (
+	31,
+    'Chicken Potpie',
+    'Hungry Man',
+    10,
+    1.49,
+    'hungry_man_chicken_pot_pie.jpg',
+    13,
+    10
+);
+INSERT INTO Product VALUES (
+	32,
+    'Bacon',
+    'Bob\'s Bacon',
+    10,
+    3.00,
+    'bobs_bacon.jpg',
+    4,
+    10
+);
+INSERT INTO Product VALUES (
+	33,
+    'Chocolate Chip Cookies',
+    'Chips Ahoy',
+    10,
+    1.99,
+    'chips_ahoy.png',
+    12,
+    10
+);
+INSERT INTO Product VALUES (
+	34,
+    'Peanut Butter',
+    'Kraft',
+    10,
+    2.99,
+    'kraft_peanut_butter.png',
+    15,
+    10
+);
+INSERT INTO Product VALUES (
+	35,
+    'Black Forest Ham (price per 100g)',
+    'N\\A',
+    10,
+    1.29,
+    'black_forest_ham.jpg',
+    5,
+    10
+);
+INSERT INTO Product VALUES (
+	36,
+    'Cooked Turkey Breast (price per 100g)',
+    'N\\A',
+    10,
+    0.99,
+    'turkey_breast.png',
+    5,
+    10
+);
+INSERT INTO Product VALUES (
+	37,
+    'Margarine',
+    'Parkay',
+    10,
+    3.00,
+    'parkay_margarine.jpg',
+    15,
+    10
+);
+INSERT INTO Product VALUES (
+	38,
+    'Beef Short Ribs',
+    'N\\A',
+    10,
+    7.99,
+    'beef_short_ribs.jpg',
+    5,
+    10
+);
+INSERT INTO Product VALUES (
+	39,
+    'Hot Dogs',
+    'Butcher\'s Selection',
+    10,
+    6.00,
+    'hot_dog.png',
+    5,
+    10
+);
+INSERT INTO Product VALUES (
+	40,
+    'Pork Sirloin Chops Bone-in',
+    'N\\A',
+    10,
+    2.99,
+    'pork_sirloin_chops.jpg',
+    5,
+    10
+);
 -- FreshCo - Whitby
 INSERT INTO Product VALUES (
 	100,

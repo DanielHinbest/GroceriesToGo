@@ -32,6 +32,7 @@ CREATE TABLE Store (
     store_location VARCHAR(255) NOT NULL,
     store_map_html TEXT NOT NULL,
     store_website VARCHAR(255),
+    enabled BOOLEAN DEFAULT true,
     PRIMARY KEY (store_id)
 ) AUTO_INCREMENT=1;
 
