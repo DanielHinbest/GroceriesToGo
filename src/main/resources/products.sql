@@ -104,7 +104,7 @@ INSERT INTO Product VALUES (
 
 -- Shoppers - Bowmanville Mall
 INSERT INTO Product VALUES (
-	18,
+	11,
     '2% Milk',
     'Nielson',
     10,
@@ -114,7 +114,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	19,
+	12,
     '1% Milk',
     'Nielson',
     10,
@@ -124,7 +124,7 @@ INSERT INTO Product VALUES (
     2
 );
 INSERT INTO Product VALUES (
-	20,
+	13,
     'Ibuprofen Caplets 100 pack 200mg',
     'Advil',
     10,
@@ -133,8 +133,178 @@ INSERT INTO Product VALUES (
     1,
     2
 );
+INSERT INTO Product VALUES (
+	14,
+    'Cough Drops',
+    'Ricola',
+    15,
+    3.49,
+    'ricola.png',
+    1,
+    2
+);
+INSERT INTO Product VALUES (
+	15,
+    'Ristorante Thin Crust Pepperoni Pizza',
+    'Dr. Oetker',
+    15,
+    4.99,
+    'ristorante.png',
+    13,
+    2
+);
+INSERT INTO Product VALUES (
+	16,
+    'Extra Buttery Popcorn 6-Pack',
+    'Orville Redenbacher',
+    12,
+    5.49,
+    'popcorn.png',
+    12,
+    2
+);
+INSERT INTO Product VALUES (
+	17,
+    'AA Batteries 8-Pack',
+    'Energizer',
+    18,
+    10.99,
+    'energizer.png',
+    3,
+    2
+);
+INSERT INTO Product VALUES (
+	18,
+    'Kraft Dinner Original',
+    'Kraft',
+    6,
+    2.69,
+    'kraft_dinner.png',
+    14,
+    2
+);
+INSERT INTO Product VALUES (
+	19,
+    'Omega 3 Large White Eggs',
+    'Burnbrae Farms',
+    20,
+    6.39,
+    'eggs.png',
+    7,
+    2
+);
+INSERT INTO Product VALUES (
+	20,
+    'Complete Whitening + Scope Toothpaste',
+    'Crest',
+    25,
+    1.49,
+    'toothpaste.png',
+    1,
+    2
+);
 
-
+-- Metro Bowmanville Mall
+INSERT INTO Product VALUES (
+	21,
+    'White Sliced Bread',
+    'Dempster\'s',
+    30,
+    3.69,
+    'dempsters_white.jpg',
+    8,
+    3
+);
+INSERT INTO Product VALUES (
+	22,
+    'Black Forest Ham (price per 100g)',
+    'Irrisistibles',
+    10,
+    3.69,
+    'black_forest_ham.jpg',
+    5,
+    3
+);
+INSERT INTO Product VALUES (
+	23,
+    'Montreal Smoked Meat (price per 100g)',
+    'Irrisistibles',
+    10,
+    3.99,
+    'montreal_smoked_meat.jpg',
+    5,
+    3
+);
+INSERT INTO Product VALUES (
+	24,
+    'Chicken in Flatbread Frozen Meal',
+    'Stouffer\'s',
+    10,
+    4.99,
+    'chicken_frozen_meal_stouffers.jpg',
+    13,
+    3
+);
+INSERT INTO Product VALUES (
+	25,
+    'Lean Ground Beef',
+    'N\A',
+    20,
+    17.17,
+    'lean_ground_beef.jpg',
+    4,
+    3
+);
+INSERT INTO Product VALUES (
+	26,
+    '2% Milk',
+    'Beatrice',
+    25,
+    5.39,
+    'beatrice_2_milk.jpg',
+    7,
+    3
+);
+INSERT INTO Product VALUES (
+	27,
+    'Lettuce',
+    'N\A',
+    30,
+    3.99,
+    'lettuce.jpg',
+    9,
+    3
+);
+INSERT INTO Product VALUES (
+	28,
+    'Baby-Cut Carrots',
+    'Bolthouse Farms',
+    10,
+    1.99,
+    'baby_cut_carrots.jpg',
+    9,
+    3
+);
+INSERT INTO Product VALUES (
+	29,
+    'Pork Tenderloins',
+    'N\A',
+    10,
+    17.61,
+    'pork_tenderloin.jpg',
+    4,
+    3
+);
+INSERT INTO Product VALUES (
+	30,
+    'Mayonnaise',
+    'Hellmann\'s',
+    10,
+    6.49,
+    'mayo.jpg',
+    15,
+    3
+);
 -- FreshCo - Whitby
 INSERT INTO Product VALUES (
 	100,

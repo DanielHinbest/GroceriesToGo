@@ -56,3 +56,7 @@ INSERT INTO Department VALUES (
 	14, 
     'Prepared Meals'
 );
+INSERT INTO Department VALUES (
+    15,
+    'Pantry'
+);
