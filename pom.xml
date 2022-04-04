@@ -13,7 +13,6 @@
     <spring-security.version>4.0.2.RELEASE</spring-security.version>  
     <spring-data-jpa.version>1.8.2.RELEASE</spring-data-jpa.version>  
     <hibernate.version>4.3.11.Final</hibernate.version>  
-    <hibernate-validator.version>5.2.1.Final</hibernate-validator.version>  
     <mysql-connector.version>8.0.21</mysql-connector.version>  
     <commons-dbcp.version>1.4</commons-dbcp.version>  
     <jstl.version>1.2</jstl.version>  
@@ -42,11 +41,6 @@
       <groupId>org.springframework.security</groupId>  
       <artifactId>spring-security-config</artifactId>  
       <version>${spring-security.version}</version> 
-    </dependency>  
-    <dependency> 
-      <groupId>org.hibernate</groupId>  
-      <artifactId>hibernate-validator</artifactId>  
-      <version>${hibernate-validator.version}</version> 
     </dependency>  
     <dependency> 
       <groupId>org.springframework.data</groupId>  
@@ -148,7 +142,7 @@
           <subscriptionId>739f6133-decf-41a9-9fa2-f1a6ab022566</subscriptionId>  
           <resourceGroup>groceriestogo</resourceGroup>  
           <appName>groceriestogo</appName>  
-          <pricingTier>F1</pricingTier>  
+          <pricingTier>B1</pricingTier>  
           <region>canadacentral</region>  
           <runtime> 
             <os>Windows</os>  
