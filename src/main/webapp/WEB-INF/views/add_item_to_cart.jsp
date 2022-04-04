@@ -29,7 +29,9 @@
 		<sql:param value="${user_id}"/>
 	</sql:update>
 	<c:set var="store">${store}</c:set>
+	<c:set var="contextPath">${contextPath}</c:set>
 	<jsp:useBean id="store" type="java.lang.String"/>
-	<% response.sendRedirect("/stores/" + store); %>
+	<jsp:useBean id="contextPath" type="java.lang.String"/>
+	<% response.sendRedirect(contextPath + "/stores/" + store); %>
 </c:if>
 <%@ include file="layouts/footer.jsp"%>

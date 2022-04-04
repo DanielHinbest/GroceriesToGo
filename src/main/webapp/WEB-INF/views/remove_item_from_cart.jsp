@@ -14,6 +14,8 @@
 		DELETE FROM CartItem WHERE cart_item_id = ?
 		<sql:param value="${cart_item}"/>
 	</sql:update>
-	<% response.sendRedirect("/cart"); %>
+	<c:set var="contextPath">${contextPath}</c:set>
+	<jsp:useBean id="contextPath" type="java.lang.String"/>
+	<% response.sendRedirect(contextPath + "/cart"); %>
 </c:if>
 <%@ include file="layouts/footer.jsp"%>
