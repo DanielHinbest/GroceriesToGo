@@ -802,3 +802,188 @@ INSERT INTO Product VALUES (
     1,
     4
 );
+INSERT INTO Product VALUES (
+    501,
+    'Peanut butter',
+    'Kraft',
+    20,
+    2.99,
+    'pb_kraft.jpg',
+    5,
+    7
+);
+INSERT INTO Product VALUES (
+    502,
+    'Bartelet Pears 1KG bag',
+    'Product of USA',
+    45,
+    3.99,
+    'pears.png',
+    1,
+    7
+);
+INSERT INTO Product VALUES (
+    503,
+    'Italian Bread',
+    'Chalet',
+    16,
+    1.99,
+    'italian bread.jpg',
+    8,
+    7
+);
+INSERT INTO Product VALUES (
+    504,
+    'Strawberries',
+    'Product of KG',
+    46,
+    2.99,
+    'strawberries.jpg',
+    1,
+    7
+);
+INSERT INTO Product VALUES (
+    505,
+    'Lean Ground Beaf',
+    'Product of CA',
+    15,
+    5.99,
+    'lean ground beef.jpeg',
+    4,
+    7
+);
+INSERT INTO Product VALUES (
+    506,
+    'Cheetos MacN Cheese',
+    'Cheetos',
+    24,
+    0.99,
+    'cheetos_mac&cheese.jpg',
+    12,
+    7
+);
+INSERT INTO Product VALUES (
+    507,
+    'Whole Kalamata Olives',
+    'Kalo Mati',
+    20,
+    5.99,
+    'olives.jpg',
+    1,
+    7
+);
+INSERT INTO Product VALUES (
+    508,
+    'Wildberry Cheesecake',
+    'Dr.Oetker',
+    32,
+    1.00,
+    'cheesecake droatker.jpg',
+    7,
+    7
+);
+INSERT INTO Product VALUES (
+    601,
+    '2% milk',
+    'Beatrice',
+    12,
+    4.99,
+    'beatrice_2.png',
+    7,
+    8
+);
+INSERT INTO Product VALUES (
+    602,
+    'Tortillas',
+    'Compliment',
+    27,
+    5.10,
+    'tortilla.jpg',
+    5,
+    8
+);
+INSERT INTO Product VALUES (
+    603,
+    'Paneer',
+    'Nanak',
+    16,
+    6.99,
+    'paneer.jpg',
+    7,
+    8
+);
+INSERT INTO Product VALUES (
+    604,
+    'Eggs',
+    'Compliement',
+    25,
+    4.99,
+    'eggs_compliment.jpg',
+    7,
+    8
+);
+INSERT INTO Product VALUES (
+    605,
+    'Rolo frozen desert',
+    'Nestle',
+    32,
+    5.00,
+    'rolo_ice.jpeg',
+    13,
+    8
+);
+INSERT INTO Product VALUES (
+    606,
+    'Frozen corn',
+    'Compliments',
+    12,
+    5.99,
+    'corn_frozen.jpg',
+    13,
+    8
+);
+INSERT INTO Product VALUES (
+    607,
+    'Chicken breasts',
+    'Maple leaf',
+    24,
+    12.00,
+    'chicken_breasts.jpg',
+    4,
+    8
+);
+INSERT INTO Product VALUES (
+    608,
+    'Oreos 270g',
+    'Christie',
+    25,
+    2.97,
+    'oreos.jpg',
+    12,
+    8
+);
+INSERT INTO Product VALUES (
+    701,
+    'Oreos 270g',
+    'Christie',
+    34,
+    2.97,
+    'oreos.jpg',
+    12,
+    8
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+INSERT INTO Product VALUES (
+);
+
