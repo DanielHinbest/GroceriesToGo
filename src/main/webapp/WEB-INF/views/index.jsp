@@ -45,12 +45,24 @@
     			<c:forEach var="storeList" items="${stores.rows}">
     				<tr>
     					<c:if test="${storeList.enabled}">
-    						<td><a href="stores/${storeList.store_id}"><c:out value="${storeList.store_name}"/></a></td>
+    						<form action="${contextPath}/stores/${storeList.store_id}">
+    							<td>
+    								<button class="button button--pandora">
+    									<span>
+											<c:out value="${storeList.store_name}" />
+										</span>
+									</button>
+								</td>
+    						</form>
     					</c:if>
     					<c:if test="${!storeList.enabled}">
-							<td><button class="button button--pandora"><span>
+							<td>
+								<button class="button button--pandora">
+									<span>
 										<c:out value="${storeList.store_name}" />
-									</span></button></td>
+									</span>
+								</button>
+							</td>
     					</c:if>
     				</tr>
     			</c:forEach>
