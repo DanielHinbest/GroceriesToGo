@@ -10,9 +10,9 @@
 	</c:if>
 	
 	<c:if test="${pageContext.request.userPrincipal.name != null}">
-  <h3>Store Locator</h3>
-
   <div class="container">
+  <h3>Store Locator</h3>
+  
       <div id="searchWrapper">
           <input type="text" name="searchBar" id="searchBar" placeholder="search for a Store" />
       </div>
