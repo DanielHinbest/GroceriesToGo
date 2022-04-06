@@ -3,7 +3,7 @@
 	Daniel Hinbest, Ryan Clayson, Yash Gadhiya
 	February 20, 2022
  -->
-<% String title = "Welcome"; %>
+<% String title = "About"; %>
 <%@ include file="layouts/header.jsp"%>
 	
 	<div class="container text-center mt-5 mb-2">
@@ -28,7 +28,9 @@
                 <h5 class="mt-3 name">Ryan Clayson</h5>
                 <span class="work d-block">Front-End</span>
                 <span class="work d-block">Development</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                <div class="mt-4 about"><span>is a 3rd year student of the Computer Programming and Analysis program here at Durham College. I am eager to be finishing up school this week and
+                 		looking forward to exploring my future career in the IT industry.</span>
+                 		</div>
                 <div class="mt-4">
                     <h6 class="v-profile"><a href="https://www.linkedin.com/in/ryan-clayson/">View Profile</a></h6>
                 </div>
@@ -39,7 +41,8 @@
                 <h5 class="mt-3 name">Daniel Hinbest</h5>
                 <span class="work d-block">Full Stack</span>
                 <span class="work d-block">Development</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                <div class="mt-4 about"><span>is a 3rd year student in Computer Programming and Analysis at Durham College. I am very excited for my
+                future and opportunities in the IT industry.</span></div>
                 <div class="mt-4">
                     <h6 class="v-profile"><a href="https://www.linkedin.com/in/daniel-hinbest/">View Profile</a></h6>
                 </div>

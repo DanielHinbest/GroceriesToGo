@@ -1,6 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
+  <center>
+    <ul class="navbar-nav" >
       <li class="nav-item active">
         <a class="nav-link" href="${contextPath}/">
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
@@ -24,9 +28,8 @@
 </nav>
 
 <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/slidebar.css">
-<div class="navigation">
-    <div class="menuToggle"></div>
-    <ul>
+    <div class="menuToggle">
+    <ul class="navbar-nav">
         <li class="list" style="--clr: #000;">
             <a href="${contextPath}/">
                 <span class="icon"><ion-icon name="home-outline" color="success"></ion-icon></span>
@@ -56,13 +59,14 @@
             </a>
         </li>
         <li class="list" style="--clr: #000;">
-            <a href="${contextPath}/order_history">
+            <a href="${contextPath}/cart">
                 <span class="icon"><ion-icon name="newspaper-outline" color="success"></ion-icon></span>
-                <span class="text">Order history</span>
+                <span class="text">Cart</span>
             </a>
         </li>
     </ul>
-</div>
+    
+    </div>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="${contextPath}/resources/js/slidebar.js"></script>

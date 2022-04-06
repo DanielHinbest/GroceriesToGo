@@ -5,11 +5,28 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 
+/**
+ * Manages the HTTP Requests
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-03-19)
+ * @since 1.0
+ */
 public class HttpRequest {
 
+	/**
+	 * A new HTTP connection
+	 */
     private static HttpURLConnection connection;
+    /**
+     * A new URL string
+     */
     private static String urlString;
 
+    /**
+     * Connect to HTTP
+     * @param urlString the url path
+     * @return the status
+     */
     public static int MethodToGetThingsWork(String urlString) {
         try {
             URL url = new URL(urlString);

@@ -37,6 +37,13 @@ public class StoreController {
 		return "store_products";
 	}
 	
+	/**
+	 * A product view
+	 * @param model The model with product details
+	 * @param store_id The store ID
+	 * @param product_id The product ID
+	 * @return the product view
+	 */
 	@RequestMapping(value="/stores/{store_id}/{product_id}", method=RequestMethod.GET)
 	public String productView(Model model, @PathVariable int store_id, @PathVariable int product_id) {
 		model.addAttribute("store", store_id);
