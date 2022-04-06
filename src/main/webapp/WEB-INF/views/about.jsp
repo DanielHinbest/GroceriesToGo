@@ -28,7 +28,9 @@
                 <h5 class="mt-3 name">Ryan Clayson</h5>
                 <span class="work d-block">Front-End</span>
                 <span class="work d-block">Development</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                <div class="mt-4 about"><span>is a 3rd year student of the Computer Programming and Analysis program here at Durham College. I am eager to be finishing up school this week and
+                 		looking forward to exploring my future career in the IT industry.</span>
+                 		</div>
                 <div class="mt-4">
                     <h6 class="v-profile"><a href="https://www.linkedin.com/in/ryan-clayson/">View Profile</a></h6>
                 </div>
