@@ -8,8 +8,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+/**
+ * Controls for error codes
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-03-19)
+ * @since 1.0
+*/
 @Controller
 public class ErrorController {
+	
+	/**
+	 * Create the error pages
+	 * @param httpRequest The HTTP Request
+	 * @param model A model with contents stored
+	 * @return The necessary error view
+	 */
 	@RequestMapping(value = "errors", method = RequestMethod.GET)
     public ModelAndView renderErrorPage(HttpServletRequest httpRequest, Model model) {
         
@@ -53,10 +66,5 @@ public class ErrorController {
     private int getErrorCode(HttpServletRequest httpRequest) {
         return (Integer) httpRequest
           .getAttribute("javax.servlet.error.status_code");
-    }
-    
-    @RequestMapping(value = "500Error", method = RequestMethod.GET)
-    public void throwRuntimeException() {
-        throw new NullPointerException("Throwing a null pointer exception");
     }
 }

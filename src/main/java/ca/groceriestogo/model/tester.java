@@ -4,9 +4,18 @@ import java.util.Vector;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-
+/**
+ * A tester file
+ * @author Daniel Hinbest, Ryan Clayson, Yash Gadhiya
+ * @version 1.0 (2022-02-19)
+ * @since 1.0
+ */
 public class tester {
 
+	/**
+	 * Test the connection to the database
+	 * @param args string arguments
+	 */
     public static void main(String[] args) {
         System.out.println("************THIS IS A TESTER FILE***********");
 

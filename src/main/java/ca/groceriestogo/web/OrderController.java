@@ -31,6 +31,8 @@ public class OrderController {
 	/**
 	 * Adds an item to the cart and redirects back to the list
 	 * @param model A model with attributes
+	 * @param store_id the store ID for the item
+	 * @param product_id the item ID
 	 * @return The redirect to the item list
 	 */
 	@RequestMapping(value = "/stores/{store_id}/{product_id}/add", method = RequestMethod.GET)
