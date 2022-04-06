@@ -970,20 +970,76 @@ INSERT INTO Product VALUES (
     2.97,
     'oreos.jpg',
     12,
-    8
+    5
 );
 INSERT INTO Product VALUES (
+    702,
+    'Red Seedles Grapes',
+    'Pdt of Chile',
+    24,
+    2.20,
+    'red_grapes.png',
+    9,
+    5
 );
 INSERT INTO Product VALUES (
+    703,
+    'Pork Tenderloin',
+    'Product of CA',
+    16,
+    4.99,
+    'pork_tenderloin.jpg',
+    4,
+    5
 );
 INSERT INTO Product VALUES (
+    704,
+    'Sour Cream',
+    'Gay Lea',
+    23,
+    1.97,
+    'sour_cream.jpg',
+    7,
+    5
 );
 INSERT INTO Product VALUES (
+    705,
+    'Miss Vickies',
+    'Frito Lay',
+    26,
+    2.97,
+    'vickies.jpg',
+    12,
+    5
 );
 INSERT INTO Product VALUES (
+    706,
+    'Kraft Ranchers',
+    'Kraft',
+    24,
+    3.49,
+    'kraft_rancher.jpg',
+    11,
+    5
 );
 INSERT INTO Product VALUES (
+    707,
+    'KitKat Drumstick',
+    'Nestle',
+    20,
+    4.99,
+    'drumstick.png',
+    13,
+    5
 );
 INSERT INTO Product VALUES (
+    708,
+    'Chicken Soup',
+    'Campbell',
+    15,
+    2.69,
+    'campbell_soup.jfif',
+    1,
+    5
 );
 
