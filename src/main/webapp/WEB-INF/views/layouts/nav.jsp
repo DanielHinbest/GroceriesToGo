@@ -56,9 +56,9 @@
             </a>
         </li>
         <li class="list" style="--clr: #000;">
-            <a href="${contextPath}/order_history">
+            <a href="${contextPath}/cart">
                 <span class="icon"><ion-icon name="newspaper-outline" color="success"></ion-icon></span>
-                <span class="text">Order history</span>
+                <span class="text">Cart</span>
             </a>
         </li>
     </ul>
