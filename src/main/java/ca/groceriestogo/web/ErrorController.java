@@ -39,6 +39,11 @@ public class ErrorController {
                 errorMsg = "The server is suffering from an unexpected error. Please try again later.";
                 break;
             }
+            case 503: {
+                errorCode = "Http Error Code: 503. Service Unavailable";
+                errorMsg = "The service is currently unavailable. Please try again later.";
+                break;
+            }
         }
         errorPage.addObject("errorCode", errorCode);
         errorPage.addObject("errorMsg", errorMsg);
