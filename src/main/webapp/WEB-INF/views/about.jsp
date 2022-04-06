@@ -3,7 +3,7 @@
 	Daniel Hinbest, Ryan Clayson, Yash Gadhiya
 	February 20, 2022
  -->
-<% String title = "Welcome"; %>
+<% String title = "About"; %>
 <%@ include file="layouts/header.jsp"%>
 	
 	<div class="container text-center mt-5 mb-2">
