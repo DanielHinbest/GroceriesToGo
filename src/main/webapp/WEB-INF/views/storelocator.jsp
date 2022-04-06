@@ -7,7 +7,8 @@
 <%@ include file="layouts/header.jsp"%>
 <div class="container">
 <c:if test="${pageContext.request.userPrincipal.name == null}">
-		<% response.sendRedirect("/login"); %>
+		<jsp:useBean id="contextPath" type="java.lang.String"/>
+		<% response.sendRedirect(contextPath + "/login"); %>
 	</c:if>
 	
 	<c:if test="${pageContext.request.userPrincipal.name != null}">

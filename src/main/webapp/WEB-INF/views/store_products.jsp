@@ -38,7 +38,8 @@
 
 <div class="container">
 	<c:if test="${pageContext.request.userPrincipal.name == null}">
-		<% response.sendRedirect("/login");	%>
+		<jsp:useBean id="contextPath" type="java.lang.String"/>
+		<% response.sendRedirect(contextPath + "/login"); %>
 	</c:if>
 	<div class="row">
 		<div class="col-50">
