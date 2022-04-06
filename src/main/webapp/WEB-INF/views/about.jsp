@@ -41,7 +41,8 @@
                 <h5 class="mt-3 name">Daniel Hinbest</h5>
                 <span class="work d-block">Full Stack</span>
                 <span class="work d-block">Development</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                <div class="mt-4 about"><span>is a 3rd year student in Computer Programming and Analysis at Durham College. I am very excited for my
+                future and opportunities in the IT industry.</span></div>
                 <div class="mt-4">
                     <h6 class="v-profile"><a href="https://www.linkedin.com/in/daniel-hinbest/">View Profile</a></h6>
                 </div>
