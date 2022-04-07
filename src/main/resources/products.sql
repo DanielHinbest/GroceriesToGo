@@ -948,7 +948,7 @@ INSERT INTO Product VALUES (
     'Maple leaf',
     24,
     12.00,
-    'chicken_breasts.jpg',
+    'chicken_breast.jpg',
     4,
     8
 );

@@ -84,6 +84,12 @@ public class HomeController {
 		return "faq";
 	}
 
+	/**
+	 * Loads the search view
+	 * @param keyword the search product
+	 * @param model a model with content
+	 * @return a search view
+	 */
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	public String search(@Param("keyword") String keyword, Model model) {
 		System.out.println("Keyword: " + keyword);

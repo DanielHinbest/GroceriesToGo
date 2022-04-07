@@ -5,8 +5,12 @@
 </sql:query>
 <link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/test.css">
 <div class="container">
-
-<form class="serachform" action="/search" method="GET">
+<c:if test="${pageContext.request.userPrincipal.name == null}">
+		<jsp:useBean id="contextPath" type="java.lang.String"/>
+		<% response.sendRedirect(contextPath + "/login"); %>
+	</c:if>
+	<c:if test="${pageContext.request.userPrincipal.name != null}">
+<form class="serachform" action="${contextPath}/search" method="GET">
     <input type="search" name="keyword" size="50"
             class="form-control" placeholder="product" required />
             &nbsp;
@@ -28,7 +32,6 @@
 				<th>Product</th>
 				<th>Brand</th>
 				<th>Cost</th>
-				<th>Department</th>
 			</tr>
 			<c:forEach var="product_list" items="${searchResult}">
 				<tr>
@@ -46,7 +49,7 @@
 		</table>
 
 
-
+</c:if>
 
 
 
