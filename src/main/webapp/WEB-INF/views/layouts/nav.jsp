@@ -3,13 +3,16 @@
     <span class="navbar-toggler-icon"></span>
 </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-  <center>
-    <ul class="navbar-nav" >
-      <li class="nav-item active">
+  <ul class="navbar-nav">
+  	<li class="nav-item active">
         <a class="nav-link" href="${contextPath}/">
         <img src="${contextPath}/resources/images/GTGLogo.PNG" alt="Logo" style=width:20%>
         </a>
       </li>
+  </ul>
+  <span class="nav">
+    <ul class="navbar-nav" >
+      
       <li class="nav-item" padding: 25px>
       	<a class="nav-link" href="${contextPath}/cart">Cart</a>
       </li>      
@@ -24,6 +27,7 @@
       </li>
       </c:if>
     </ul>
+    </span>
   </div>
 </nav>
 

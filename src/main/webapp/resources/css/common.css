@@ -4,6 +4,10 @@ body {
     background-color: #eee;
 }
 
+.nav {
+	float: right;
+}
+
 .form-signin {
     max-width: 330px;
     padding: 15px;
