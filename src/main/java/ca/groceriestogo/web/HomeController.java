@@ -1,9 +1,17 @@
 package ca.groceriestogo.web;
 
+import ca.groceriestogo.model.Product;
+import ca.groceriestogo.service.ProductService;
+import ca.groceriestogo.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import java.sql.ResultSet;
+import java.util.List;
 
 /**
  * A controller class designed for handling the routing and functionality of the main details
@@ -13,6 +21,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class HomeController {
+
+	@Autowired
+	ProductService productService;
+
+
 	/**
 	 * The routing for the home page after a successful login
 	 * @param model The user model that is logged in
@@ -69,5 +82,18 @@ public class HomeController {
 	@RequestMapping(value = "/FAQ", method = RequestMethod.GET)
 	public String faq(Model model) {
 		return "faq";
+	}
+
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public String search(@Param("keyword") String keyword, Model model) {
+		System.out.println("Keyword: " + keyword);
+
+		List<Product> searchResult = productService.search(keyword);
+		System.out.println("Results: " + searchResult.size());
+		model.addAttribute("keyword", keyword);
+		model.addAttribute("pageTitle", "Search results for '" + keyword + "'");
+		model.addAttribute("searchResult", searchResult);
+
+		return "search_result";
 	}
 }

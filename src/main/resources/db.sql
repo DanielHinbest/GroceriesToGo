@@ -101,3 +101,7 @@ CREATE TABLE user_role (
   CONSTRAINT fk_user_role_roleid FOREIGN KEY (role_id) REFERENCES role (id) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT fk_user_role_userid FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
+ALTER TABLE `groceriestogo`.`product`
+ADD FULLTEXT INDEX `full_text_search_idx` (`product_name`, `product_brand`) VISIBLE;
+;

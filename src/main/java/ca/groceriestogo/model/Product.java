@@ -43,6 +43,15 @@ public class Product {
 	 */
 	@Column(name="product_cost")
 	private double productCost;
+
+	@Column(name = "product_image")
+	private String productImage;
+
+	@Column(name = "department_id")
+	private int departmentId;
+
+	@Column(name = "store_id")
+	private int storeId;
 	
 	/**
 	 * Get the ID number for the product
@@ -114,6 +123,15 @@ public class Product {
 	public void setProductCost(double productCost) {
 		this.productCost = productCost;
 	}
+
+	public String getProductImage() { return productImage; }
+	public void setProductImage(String productImage) { this.productImage = productImage; }
+
+	public int getDepartmentId() { return departmentId; }
+	public void setDepartmentId(int departmentId) { this.departmentId = departmentId; }
+
+	public int getStoreId() { return storeId; }
+	public void setStoreId(int storeId) { this.storeId = storeId; }
 	
 	
 }

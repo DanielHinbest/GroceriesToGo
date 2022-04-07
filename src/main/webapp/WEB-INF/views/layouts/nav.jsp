@@ -55,9 +55,14 @@
             <a href="${contextPath}/store_locator">
                 <span class="icon"><ion-icon name="location-outline" color="success"></ion-icon></span>
                 <span class="text">Store Locator</span>
-
             </a>
         </li>
+        <li class="list" style="--clr: #000;">
+                    <a href="${contextPath}/search">
+                        <span class="icon"><ion-icon name="location-outline" color="success"></ion-icon></span>
+                        <span class="text">Find Product</span>
+                    </a>
+                </li>
         <li class="list" style="--clr: #000;">
             <a href="${contextPath}/cart">
                 <span class="icon"><ion-icon name="newspaper-outline" color="success"></ion-icon></span>
