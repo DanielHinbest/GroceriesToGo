@@ -21,7 +21,7 @@
   <div class="container text-center mt-5 mb-2">
     <h1 class="mb-0">Meet our Team</h1>
   </div>
-<div class="container mt-3">
+<div class="container mt-3" style="padding-right: -250x;">
     <div class="row">
         <div class="col-md-3">
             <div class="bg-white p-3 text-center rounded box"><img class="img-responsive rounded-circle" src="${contextPath}/resources/images/RyanClayson.jpg" alt="Ryan" style="width:100%">
@@ -53,7 +53,7 @@
                 <h5 class="mt-3 name">Yash Gadhiya</h5>
                 <span class="work d-block">Back-end</span>
                 <span class="work d-block">Development</span>
-                <div class="mt-4 about"><span>is a long established fact that eader&nbsp; will be distracted by the readable content.</span></div>
+                <div class="mt-4 about"><span>is a 3rd year student of Computer Programming and Analysis program at Durham College. I am looking forward for my new career opportunities.</span></div>
                 <div class="mt-4">
                     <h6 class="v-profile"><a href="https://www.linkedin.com/in/yash551/">View Profile</a></h6>
                 </div>

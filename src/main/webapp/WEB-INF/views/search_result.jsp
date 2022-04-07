@@ -26,8 +26,11 @@
 	<c:set var="product_cost" value="${row.productCost}"/>
 	<c:set var="store_id" value="${row.storeId }"/>
 </c:forEach>
-<table border="1" width="100%">
-			<tr>
+
+<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/table.css">
+
+<table width="100%" class="table">
+			<tr class="thead-dark">
 				<th></th>
 				<th>Product</th>
 				<th>Brand</th>

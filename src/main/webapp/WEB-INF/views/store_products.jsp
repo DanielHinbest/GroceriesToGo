@@ -35,7 +35,7 @@
 	<c:set var="store_location" value="${row.store_location}"/>
 	<c:set var="store_website" value="${row.store_website}"/>
 </c:forEach>
-
+<link rel="stylesheet" type="text/css" href="${contextPath}/resources/css/table.css">
 <div class="container">
 	<c:if test="${pageContext.request.userPrincipal.name == null}">
 		<jsp:useBean id="contextPath" type="java.lang.String"/>
@@ -52,15 +52,17 @@
 	${store_map}
 	
 	<h3>Select the products you would like to add to your cart</h3>
-		
-		<table border="1" width="100%">
-			<tr>
+    <div class="table-wrap">
+		<table width="100%" class="table">
+			<thread >
+			<tr class="thead-dark">
 				<th></th>
 				<th>Product</th>
 				<th>Brand</th>
 				<th>Cost</th>
 				<th>Department</th>
 			</tr>
+			</thread>
 			<c:forEach var="product_list" items="${results.rows}">			
 				<tr>
 					<td align="center"><img src="${contextPath}/resources/images/products/${product_list.product_image}" alt="Product image" height="100"></td>
@@ -76,5 +78,6 @@
 				</tr>
 			</c:forEach>
 		</table>
+		</div>
 </div>
 <%@ include file="layouts/footer.jsp"%>
